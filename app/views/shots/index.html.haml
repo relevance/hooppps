@@ -1,0 +1,11 @@
+#home
+  .toolbar
+    %h1.hooppps Hooppps
+  %ul.plastic
+    - @shots.each do |shot|
+      %a{:href => shot_path(shot.id)}
+        %li
+          %h2 
+            = shot.title
+          = image_tag shot.image_url
+          %br

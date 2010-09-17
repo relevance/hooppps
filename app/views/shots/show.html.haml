@@ -1,0 +1,6 @@
+#home
+  .toolbar
+    %h1
+      = @shot.title
+    %a.back_button{:href => "/"} back
+  = image_tag @shot.image_url

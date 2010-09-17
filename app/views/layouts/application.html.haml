@@ -1,0 +1,10 @@
+!!! html
+%html
+  %head
+    %title Hooppps
+    = stylesheet_link_tag 'jqtouch','hooppps'
+    = javascript_include_tag 'jquery','jqtouch','application'
+    = csrf_meta_tag 
+
+  %body
+    = yield
