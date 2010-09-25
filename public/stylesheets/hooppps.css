@@ -47,6 +47,7 @@ h3 {
   border-radius: 4px;
   background: #EA4C88 url(img/buttons/glare.png) 0 0 repeat-x;
   font-weight: bold;
+  text-shadow: 0px 1px 1px #a14266;
 }
 #header .about {
   right: 10px;
@@ -57,6 +58,7 @@ h3 {
   border-radius: 4px;
   background: #EA4C88 url(img/buttons/glare.png) 0 0 repeat-x;
   font-weight: bold;
+  text-shadow: 0px 1px 1px #a14266;
 }
 #content {
   padding: 10px;
