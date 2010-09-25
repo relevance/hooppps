@@ -1,6 +1,19 @@
-#home
-  .toolbar
-    %h1
-      = @shot.title
-    %a.back_button{:href => "/"} back
+#header
+  %h1.hooppps hooppps
+  %a.back_button{:href => "/"} back
+#content
+  %h2 
+    = @shot.title
   = image_tag @shot.image_url
+  %h3 
+    %strong Author: 
+    = @shot.player.name
+  %h3
+    %strong Views:
+    = @shot.views_count
+  %h3
+    %strong Likes:
+    = @shot.likes_count
+  %h3
+    %strong Comments:
+    = @shot.comments_count
