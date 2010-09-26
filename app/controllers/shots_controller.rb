@@ -1,7 +1,7 @@
 class ShotsController < ApplicationController
   
   def index
-    @shots = Dribbble::Shot.popular
+    @shots = Dribbble::Shot.popular(:page => 10, :per_page => 15)
   end
   
   def show

@@ -1,4 +1,5 @@
 // toggle content div and about div visibility
+// also toggle button text about/close
 // ------------------------------------------
 $(function() {
   $('.about').toggle(function() {
