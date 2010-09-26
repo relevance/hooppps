@@ -1,6 +1,6 @@
 #header
   %h1.hooppps hooppps
-  %a.back_button{:href => "/"} back
+  = link_to "back", request.env["HTTP_REFERER"], :class => 'back_button'
 #content
   .shot_meta
     = image_tag @shot.player.avatar_url
