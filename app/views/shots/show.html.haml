@@ -2,12 +2,13 @@
   %h1.hooppps hooppps
   %a.back_button{:href => "/"} back
 #content
-  %h2.shot_meta
+  .shot_meta
     = image_tag @shot.player.avatar_url
-    = @shot.title
-    %span
-      %strong By:
-      = @shot.player.name
+    %h2
+      = @shot.title
+      %span
+        %strong By:
+        = @shot.player.name
   = image_tag @shot.image_url
   %ul.stats
     %li.views 
