@@ -38,7 +38,8 @@ h3 {
   color: #2e3439;
   text-shadow: 0px 1px 1px #8d98a0;
 }
-#header .back_button {
+#header a.back_button:link,
+#header a.back_button:visited {
   left: 10px;
   top: 8px;
   padding: 5px 7px;
@@ -49,7 +50,8 @@ h3 {
   font-weight: bold;
   text-shadow: 0px 1px 1px #a14266;
 }
-#header .about {
+#header a.about:link,
+#header a.about:visited {
   right: 10px;
   top: 8px;
   padding: 5px 7px;
@@ -59,6 +61,10 @@ h3 {
   background: #EA4C88 url(img/buttons/glare.png) 0 0 repeat-x;
   font-weight: bold;
   text-shadow: 0px 1px 1px #a14266;
+}
+#header a.about:active,
+#header a.back_button:active {
+  background: #ae446e url(img/buttons/glare.png) 0 0 repeat-x;
 }
 #content {
   padding: 10px;
@@ -118,6 +124,9 @@ h3 {
   border-right: 1px solid #54606a;
   padding-right: 10px;
 }
+#content ul.stats li.likes.no-view {
+  border-right: none;
+}
 #content ul.stats li.view {
   padding: 0;
   position: absolute;
@@ -132,4 +141,39 @@ h3 {
   background: #666 url(img/buttons/glare.png) 0 0 repeat-x;
   font-weight: bold;
   text-shadow: 0px 1px 1px #000;
+}
+#content h2.shot_meta {
+  position: relative;
+  color: #333;
+}
+#content h2.shot_meta img {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 10px;
+  width: 50px;
+  height: 50px;
+}
+#content h2.shot_meta span {
+  font-weight: normal;
+  display: block;
+  font-size: 14px;
+  position: absolute;
+  top: 30px;
+  left: 65px;
+}
+#content a.big-pink:link,
+#content a.big-pink:visited {
+  display: block;
+  padding: 10px 0;
+  -webkit-box-shadow: 0px 1px 2px #333;
+  border-radius: 4px;
+  background: #EA4C88 url(img/buttons/big-glare.png) 0 0 repeat-x;
+  font-weight: bold;
+  font-size: 16px;
+  text-shadow: 0px 1px 1px #a14266;
+  margin: 10px 0;
+  text-align: center;
+}
+#content a.big-pink:active {
+  background: #ae446e url(img/buttons/big-glare.png) 0 0 repeat-x;
 }

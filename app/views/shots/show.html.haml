@@ -2,18 +2,18 @@
   %h1.hooppps hooppps
   %a.back_button{:href => "/"} back
 #content
-  %h2 
+  %h2.shot_meta
+    = image_tag @shot.player.avatar_url
     = @shot.title
+    %span
+      %strong By:
+      = @shot.player.name
   = image_tag @shot.image_url
-  %h3 
-    %strong Author: 
-    = @shot.player.name
-  %h3
-    %strong Views:
-    = @shot.views_count
-  %h3
-    %strong Likes:
-    = @shot.likes_count
-  %h3
-    %strong Comments:
-    = @shot.comments_count
+  %ul.stats
+    %li.views 
+      = @shot.views_count
+    %li.comments 
+      = @shot.comments_count
+    %li.likes.no-view 
+      = @shot.likes_count
+  %a.big-pink{:href => "http://twitter.com/"+@shot.player.twitter_screen_name} Follow Player on Twitter
