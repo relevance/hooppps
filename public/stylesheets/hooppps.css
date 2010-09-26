@@ -85,3 +85,51 @@ h3 {
 #about a {
   color: #EA4C88;
 }
+#content ul.stats {
+  margin: 10px 0;
+  background: #9d9fa1;
+  border: 1px solid #989a9b;
+  border-radius: 4px;
+  padding: 10px;
+  position: relative;
+}
+
+#content ul.stats li {
+  list-style-type: none;
+  display: inline-block;
+  padding-left: 30px;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 32px;
+}
+#content ul.stats li.views {
+  background: transparent url(img/icons/eye.png) 2px 3px no-repeat;
+  border-right: 1px solid #54606a;
+  padding-right: 10px;
+}
+#content ul.stats li.comments {
+  background: transparent url(img/icons/comment.png) 5px 3px no-repeat;
+  border-right: 1px solid #54606a;
+  padding-left: 35px;
+  padding-right: 10px;
+}
+#content ul.stats li.likes {
+  background: transparent url(img/icons/heart.png) 2px 3px no-repeat;
+  border-right: 1px solid #54606a;
+  padding-right: 10px;
+}
+#content ul.stats li.view {
+  padding: 0;
+  position: absolute;
+  right: 10px;
+}
+#content ul.stats li.view a:link,
+#content ul.stats li.view a:visited {
+  top: 8px;
+  padding: 5px 7px;
+  -webkit-box-shadow: 0px 1px 2px #333;
+  border-radius: 4px;
+  background: #666 url(img/buttons/glare.png) 0 0 repeat-x;
+  font-weight: bold;
+  text-shadow: 0px 1px 1px #000;
+}

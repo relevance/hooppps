@@ -5,7 +5,15 @@
   - @shots.each do |shot|
     %a{:href => shot_path(shot.id)}
       = image_tag shot.image_url
-    %br
+    %ul.stats
+      %li.views 
+        = shot.views_count
+      %li.comments 
+        = shot.comments_count
+      %li.likes 
+        = shot.likes_count
+      %li.view
+        %a{:href => shot_path(shot.id)} view &raquo;
 #about
   %h2 About
   %p 
