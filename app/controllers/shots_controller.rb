@@ -1,7 +1,7 @@
 class ShotsController < ApplicationController
   
   def index
-    @page = (params[:page] || 1).to_i
+    @page = params[:page].to_i.nonzero? || 1
     @shots = Dribbble::Shot.popular(:page => @page, :per_page => 15)
   end
   

@@ -2,7 +2,10 @@
   %h1.hooppps hooppps
   %a.about{:href => '#about'} About
 #content
-  = link_to raw("next &raquo;"), root_path(:page => @page + 1)
+  - if @page > 1
+    = link_to raw("&laquo; first"), root_path
+    = link_to raw("&lsaquo; prev"), root_path(:page => @page - 1)
+  = link_to raw("next &rsaquo;"), root_path(:page => @page + 1)
   - @shots.each do |shot|
     %a{:href => shot_path(shot.id)}
       = image_tag shot.image_url
