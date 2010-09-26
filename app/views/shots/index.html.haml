@@ -15,13 +15,11 @@
       %li.view
         %a{:href => shot_path(shot.id)} view &raquo;
   - if @page == 1
-    = link_to raw("more shots &rsaquo;"), root_path(:page => @page + 1), :class => 'big-pink-half'
-    = link_to raw("jump to end &raquo;"), root_path(:page => @shots.pages), :class => 'big-pink-half'
+    = link_to raw("more shots &rsaquo;"), root_path(:page => @page + 1), :class => 'big-pink'
   - elsif @page > 1 && @page < @shots.pages
-    = link_to raw("&laquo; start"), root_path , :class => 'big-pink-quarter'
-    = link_to raw("&lsaquo; previous"), root_path(:page => @page - 1), :class => 'big-pink-quarter'
-    = link_to raw("next &rsaquo;"), root_path(:page => @page + 1), :class => 'big-pink-quarter'
-    = link_to raw("end &raquo;"), root_path(:page => @shots.pages), :class => 'big-pink-quarter'
+    = link_to raw("&laquo; back to start"), root_path , :class => 'big-pink-third'
+    = link_to raw("&lsaquo; previous"), root_path(:page => @page - 1), :class => 'big-pink-third'
+    = link_to raw("next &rsaquo;"), root_path(:page => @page + 1), :class => 'big-pink-third'
   - elsif @page == @shots.pages
     = link_to raw("&laquo; back to start"), root_path , :class => 'big-pink-half'
     = link_to raw("&lsaquo; previous shots"), root_path(:page => @page - 1), :class => 'big-pink-half'

@@ -176,6 +176,7 @@ h3 {
 }
 #content a.big-pink:active,
 #content a.big-pink-half:active,
+#content a.big-pink-third:active,
 #content a.big-pink-quarter:active {
   background: #ae446e url(img/buttons/big-glare.png) 0 0 repeat-x;
 }
@@ -192,6 +193,20 @@ h3 {
   margin: 10px 0;
   text-align: center;
   width: 49%;
+}
+#content a.big-pink-third:link,
+#content a.big-pink-third:visited {
+  display: inline-block;
+  padding: 10px 0;
+  -webkit-box-shadow: 0px 1px 2px #333;
+  border-radius: 4px;
+  background: #EA4C88 url(img/buttons/big-glare.png) 0 0 repeat-x;
+  font-weight: bold;
+  font-size: 14px;
+  text-shadow: 0px 1px 1px #a14266;
+  margin: 10px 0;
+  text-align: center;
+  width: 32.5%;
 }
 #content a.big-pink-quarter:link,
 #content a.big-pink-quarter:visited {
