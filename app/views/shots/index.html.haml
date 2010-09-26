@@ -2,10 +2,6 @@
   %h1.hooppps hooppps
   %a.about{:href => '#about'} About
 #content
-  - if @page > 1
-    = link_to raw("&laquo; first"), root_path
-    = link_to raw("&lsaquo; prev"), root_path(:page => @page - 1)
-  = link_to raw("next &rsaquo;"), root_path(:page => @page + 1)
   - @shots.each do |shot|
     %a{:href => shot_path(shot.id)}
       = image_tag shot.image_url
@@ -18,6 +14,15 @@
         = shot.likes_count
       %li.view
         %a{:href => shot_path(shot.id)} view &raquo;
+  - if @page == 1
+    = link_to raw("more shots &rsaquo;"), root_path(:page => @page + 1), :class => 'big-pink'
+  - if @page == 1+1
+    = link_to raw("&lsaquo; previous shots"), root_path(:page => @page - 1), :class => 'big-pink-half'
+    = link_to raw("more shots &rsaquo;"), root_path(:page => @page + 1), :class => 'big-pink-half'
+  - if @page > 1+1
+    = link_to raw("&laquo; back to first"), root_path , :class => 'big-pink-third'
+    = link_to raw("&lsaquo; previous shots"), root_path(:page => @page - 1), :class => 'big-pink-third'
+    = link_to raw("more shots &rsaquo;"), root_path(:page => @page + 1), :class => 'big-pink-third'
   
 #about
   %h2 About
