@@ -1,3 +1,5 @@
+// hide address bar (or at least scroll below)
+window.scrollTo(0, 1); 
 // toggle content div and about div visibility
 // also toggle button text about/close
 // ------------------------------------------
