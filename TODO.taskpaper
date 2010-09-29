@@ -1,0 +1,55 @@
+Player View:
+
+  - Link to here from Shot page (use player name from shot title as link)
+  - Link to here from List of Players
+  
+  # See some data about the player & use shot page as starting template
+    - player.name
+    - player.avatar_url
+    - player.url
+    - player.location
+    - Link to follow (player.twitter_screen_name)
+    - player.drafted_by_player_id
+  
+  # Player stats
+    - player.shots_count
+      - Link to shots (separate view) => player.shots , or paginate: player.shots(:page => 2, :per_page => 10)
+    - player.draftees_count
+      - List Draftees (separate view) => player.draftees
+    - player.followers_count
+    - player.following_count
+
+
+Players List View(s):
+
+  - List "All-Stars"
+    - player.name
+    - player.avatar_url
+    - Link to player page
+    
+Shot View:
+
+  - Link to Shot's Comments List View
+    
+    On Comments List View:
+    
+    - player.avatar_url
+    - player.name (link to player page)
+    - comment
+
+Tags List View:
+ 
+ - List of popular tags
+ - Links to List of Shots (tagged)
+ 
+Navigation:
+
+  - Land on Grid Nav
+    - Items:
+      - Popular Shots
+      - All-Star-Players List
+      - Popular Tags
+      - About hooppps
+      - Follow hooppps on Twitter
+      - Find a Player
+  - Current "About" link in header will open this grid nav (will provide access to many points from anywhere in app)
