@@ -9,7 +9,7 @@
       %li.views 
         = shot.views_count
       %li.comments 
-        = shot.comments_count
+        = link_to shot.comments_count, shot_path(shot.id), :class => 'no-style'
       %li.likes 
         = shot.likes_count
       %li.view
