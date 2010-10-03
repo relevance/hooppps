@@ -4,14 +4,29 @@
 #content
   .shot_meta
     =image_tag @player.avatar_url
-    %h2
-      = @player.name
-      %span
-        = @player.location
-        %br
-        %a{:href => @player.website_url , :target => '_blank'}=@player.website_url
-  = render :partial => "player_stats"
-  %h3=@player.name+'\'s shots:'
-  = render :partial => "player_shots"
 
+    - if @player.name == nil
+      %h2
+        = @player.username
+        %span
+          = @player.location
+          %br
+          %a{:href => @player.website_url , :target => '_blank'}=@player.website_url
+    - else
+      %h2
+        = @player.name
+        %span
+          = @player.location
+          %br
+          %a{:href => @player.website_url , :target => '_blank'}=@player.website_url
+  
+  = render :partial => "player_stats"
+  
   %a.big-pink{:href => "http://twitter.com/"+@player.twitter_screen_name , :target => "_blank"} Follow Player on Twitter
+  
+  - if @player.name == nil
+    %h3=@player.username+'\'s shots:'
+  - else
+    %h3=@player.name+'\'s shots:'
+  
+  = render :partial => "player_shots"

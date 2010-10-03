@@ -10,6 +10,9 @@
         %strong By:
         %a{:href => player_path(@shot.player.username)} 
           = @shot.player.name
+        - if @shot.player.name == nil
+          %a{:href => player_path(@shot.player.username)} 
+            = @shot.player.username
   = image_tag @shot.image_url
   %ul.stats
     %li.views 
@@ -18,7 +21,7 @@
       = @shot.comments_count
     %li.likes.no-view 
       = @shot.likes_count
-  %a.big-pink{:href => "http://twitter.com/"+@shot.player.twitter_screen_name , :target => "_blank"} Follow Player on Twitter
+  %a.big-pink{:href => "http://twitter.com/share?text=Found%20on%20@dribbble:&url="+@shot.url+"&via=hooppps" , :target => "_blank"} Share this shot on twitter
 
   #comments
     = render 'comments', :comments => @comments, :shot => @shot

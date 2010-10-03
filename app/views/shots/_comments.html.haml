@@ -1,22 +1,25 @@
-%p
-  Page
-  = comments.page
-%p
-  - if comments.page == 1
-    %a{ :href => shot_path(shot.id, :comments_page => comments.page + 1) } More
-    %a{ :href => shot_path(shot.id, :comments_page => comments.pages) } Last
-  - if comments.page > 1 && comments.page < comments.pages
-    %a{ :href => shot_path(shot.id) } First
-    %a{ :href => shot_path(shot.id, :comments_page => comments.page - 1) } Back
-    %a{ :href => shot_path(shot.id, :comments_page => comments.page + 1) } More
-    %a{ :href => shot_path(shot.id, :comments_page => comments.pages) } Last
-  - if comments.page == comments.pages
-    %a{ :href => shot_path } First
-    %a{ :href => shot_path(shot.id, :comments_page => comments.page - 1) } Back
-%table
+%h3 What players are saying:
+
+%ul
   - comments.each do |comment|
-    %tr
-      %td
-        %img{ :src => comment.player.avatar_url, :style => 'text-align: left' }
-      %td= comment.player.name
-      %td= comment.body
+    %li
+      %img{:src => comment.player.avatar_url}
+      %a.comment_player_name{:href => player_path(comment.player.username)}= comment.player.name
+      %span.comment_body= comment.body
+
+//////////////////// Comments Page Nav is Broken
+/ %p
+/   Page
+/   = comments.page
+/ %p
+/   - if comments.page == 1
+/     %a{ :href => shot_path(shot.id, :comments_page => comments.page + 1) } More
+/     %a{ :href => shot_path(shot.id, :comments_page => comments.pages) } Last
+/   - if comments.page > 1 && comments.page < comments.pages
+/     %a{ :href => shot_path(shot.id) } First
+/     %a{ :href => shot_path(shot.id, :comments_page => comments.page - 1) } Back
+/     %a{ :href => shot_path(shot.id, :comments_page => comments.page + 1) } More
+/     %a{ :href => shot_path(shot.id, :comments_page => comments.pages) } Last
+/   - if comments.page == comments.pages
+/     %a{ :href => shot_path } First
+/     %a{ :href => shot_path(shot.id, :comments_page => comments.page - 1) } Back

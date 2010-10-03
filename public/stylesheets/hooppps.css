@@ -178,6 +178,8 @@ h3 {
   left: 10px;
   width: 50px;
   height: 50px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 1px 2px #000;
 }
 #content .shot_meta h2 span {
   font-weight: normal;
@@ -283,4 +285,49 @@ h3 {
   display: block;
   font-size: 24px;
   text-shadow: 0px 1px 1px #ccc;
+}
+
+
+/* comments
+---------------------------------------------*/
+#comments ul {
+  margin: 0;
+  -webkit-padding-start: 0;
+  background: #ebebeb;
+  border: 1px solid #989a9b;
+  border-radius: 4px;
+}
+
+#comments ul li {
+  list-style-type: none;
+  padding: 10px;
+  border-top: #fff 1px solid;
+  border-bottom: #bbb 1px solid;
+}
+#comments ul li:first-child {
+  border-top: none;
+}
+#comments ul li:last-child {
+  border-bottom: none;
+}
+#comments ul li img {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 4px;
+  -webkit-box-shadow: 0px 1px 2px #000;
+}
+#comments a.comment_player_name:link,
+#comments a.comment_player_name:visited {
+  color: #EA4C88;
+  font-weight: bold;
+  display: block;
+  margin-left: 40px;
+  font-size: 12px;
+}
+#comments span.comment_body {
+  display: block;
+  margin-left: 40px;
+  margin-top: 5px;
+  font-size: 10px;
 }
