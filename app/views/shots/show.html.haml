@@ -19,3 +19,6 @@
     %li.likes.no-view 
       = @shot.likes_count
   %a.big-pink{:href => "http://twitter.com/"+@shot.player.twitter_screen_name , :target => "_blank"} Follow Player on Twitter
+
+  #comments
+    = render 'comments', :comments => @comments, :shot => @shot
