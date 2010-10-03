@@ -335,3 +335,25 @@ h3 {
   white-space: no-wrap;
   overflow: hidden;
 }
+
+
+/* comments
+---------------------------------------------*/
+body.portrait #sorry {
+  display: none;
+}
+
+body.landscape #content {
+  display: none;
+}
+body.landscape #sorry {
+  display: block; 
+  margin: 10px;
+  border: 1px solid #666;
+  background: #ebebeb;
+  padding: 10px;
+  border-radius: 4px;
+}
+body.landscape #sorry a {
+  color: #EA4C88;
+}
