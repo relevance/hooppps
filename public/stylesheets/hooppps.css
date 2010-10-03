@@ -303,6 +303,7 @@ h3 {
   padding: 10px;
   border-top: #fff 1px solid;
   border-bottom: #bbb 1px solid;
+  min-height: 30px;
 }
 #comments ul li:first-child {
   border-top: none;
