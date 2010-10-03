@@ -29,14 +29,13 @@ Players List View(s):
     - Link to player page
     
 Shot View:
-
-  - Link to Shot's Comments List View
     
-    On Comments List View:
+    Comments:
     
-    - player.avatar_url
-    - player.name (link to player page)
-    - comment
+    - player.avatar_url @done
+    - player.name (link to player page) @done
+    - comment @done
+    - fix the broken navigation for paginating through comments
 
 Tags List View:
 
