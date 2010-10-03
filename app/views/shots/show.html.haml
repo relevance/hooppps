@@ -1,6 +1,6 @@
 #header
   %h1.hooppps hooppps
-  = link_to "back", request.env["HTTP_REFERER"], :class => 'back_button'
+  /= link_to "back", :back, :class => 'back_button'
 #content
   .shot_meta
     = image_tag @shot.player.avatar_url
@@ -8,7 +8,8 @@
       = @shot.title
       %span
         %strong By:
-        = @shot.player.name
+        %a{:href => player_path(@shot.player.username)} 
+          = @shot.player.name
   = image_tag @shot.image_url
   %ul.stats
     %li.views 

@@ -1,3 +1,5 @@
+/* basic html
+---------------------------------------------*/
 html {-webkit-text-size-adjust:none}
 body {
   background-color: #b0b0b0;
@@ -16,12 +18,34 @@ a:visited {
 h3 {
   font-weight: normal;
 }
+
+
+/* structure & #content specified text
+---------------------------------------------*/
 #header {
     border-bottom: 1px solid #8d98a0;
     height: 45px;
     background: url(img/toolbar.png) 0 0 #6d84a2 repeat-x;
     width: 100%;
 }
+#content {
+  padding: 10px;
+}
+#content img {
+  max-width: 100% !important;
+  display: block;
+  width: auto;
+  height: auto;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+#content h3 {
+  font-weight: bold;
+  text-shadow: 0px 1px 1px #eee;
+}
+
+/* header
+---------------------------------------------*/
 #header h1.hooppps {
   text-indent: 37px;
   line-height: 45px;
@@ -66,20 +90,10 @@ h3 {
 #header a.back_button:active {
   background: #ae446e url(img/buttons/glare.png) 0 0 repeat-x;
 }
-#content {
-  padding: 10px;
-}
-#content img {
-  max-width: 100% !important;
-  display: block;
-  width: auto;
-  height: auto;
-  margin: 0 auto;
-  margin-bottom: 10px;
-}
-#content a {
-  color: #fff;
-}
+
+
+/* about
+---------------------------------------------*/
 #about {
   display: none;
   margin: 10px;
@@ -91,6 +105,10 @@ h3 {
 #about a {
   color: #EA4C88;
 }
+
+
+/* shot stats
+---------------------------------------------*/
 #content ul.stats {
   margin: 10px 0;
   background: #9d9fa1;
@@ -99,7 +117,6 @@ h3 {
   padding: 10px;
   position: relative;
 }
-
 #content ul.stats li {
   list-style-type: none;
   display: inline-block;
@@ -142,12 +159,17 @@ h3 {
   font-weight: bold;
   text-shadow: 0px 1px 1px #000;
 }
+
+
+/* shot title & meta
+---------------------------------------------*/
 #content .shot_meta {
   min-height: 50px;
 }
 #content .shot_meta h2 {
   padding: 0 0 0 65px;
   color: #333;
+  text-shadow: 0px 1px 1px #eee;
 }
 #content .shot_meta img {
   position: absolute;
@@ -161,6 +183,15 @@ h3 {
   font-size: 14px;
   display: block;
 }
+#content .shot_meta h2 span a:link,
+#content .shot_meta h2 span a:visited {
+  color: #EA4C88;
+  font-weight: bold;
+}
+
+
+/* Button styles
+---------------------------------------------*/
 #content a.big-pink:link,
 #content a.big-pink:visited {
   display: block;
@@ -221,4 +252,34 @@ h3 {
   margin: 10px 0;
   text-align: center;
   width: 24%;
+}
+
+
+/* player stats
+---------------------------------------------*/
+#content ul.player_stats {
+  margin: 10px 0;
+  background: #9d9fa1;
+  border: 1px solid #989a9b;
+  border-radius: 4px;
+  padding: 10px;
+  position: relative;
+}
+#content ul.player_stats li {
+  list-style-type: none;
+  display: inline-block;
+  font-size: 10px;
+  font-weight: bold;
+  line-height: px;
+  text-align: center;
+  width: 23%;
+  border-right: 1px solid #666;
+}
+#content ul.player_stats li:last-child {
+  border: none;
+}
+#content ul.player_stats li span {
+  display: block;
+  font-size: 24px;
+  text-shadow: 0px 1px 1px #ccc;
 }

@@ -1,0 +1,17 @@
+#header
+  %h1.hooppps hooppps
+  /= link_to "back", :back, :class => 'back_button'
+#content
+  .shot_meta
+    =image_tag @player.avatar_url
+    %h2
+      = @player.name
+      %span
+        = @player.location
+        %br
+        %a{:href => @player.website_url , :target => '_blank'}=@player.website_url
+  = render :partial => "player_stats"
+  %h3=@player.name+'\'s shots:'
+  = render :partial => "player_shots"
+
+  %a.big-pink{:href => "http://twitter.com/"+@player.twitter_screen_name , :target => "_blank"} Follow Player on Twitter

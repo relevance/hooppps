@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/michaelparenteau/swish.git
-  revision: a39808bcb578e2e35b522d77e1601cad1ec5e27f
+  revision: 4cddac75d2f5766a72d506d46184453b8ea34420
   specs:
     swish (0.6.0)
 

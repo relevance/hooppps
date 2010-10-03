@@ -1,0 +1,16 @@
+%h3 
+  Drafted by:
+  = @player.drafted_by_player_id
+%ul.player_stats
+  %li 
+    Shots
+    %span= @player.shots_count
+  %li 
+    Draftees
+    %span= @player.draftees_count
+  %li 
+    Followers
+    %span= @player.followers_count
+  %li 
+    Following
+    %span= @player.following_count

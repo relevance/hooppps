@@ -2,18 +2,7 @@
   %h1.hooppps hooppps
   %a.about{:href => '#about'} About
 #content
-  - @shots.each do |shot|
-    %a{:href => shot_path(shot.id)}
-      = image_tag shot.image_url
-    %ul.stats
-      %li.views 
-        = shot.views_count
-      %li.comments 
-        = shot.comments_count
-      %li.likes 
-        = shot.likes_count
-      %li.view
-        %a{:href => shot_path(shot.id)} view &raquo;
+  = render :partial => "shots"
   - if @page == 1
     = link_to raw("more shots &rsaquo;"), root_path(:page => @page + 1), :class => 'big-pink'
   - elsif @page > 1 && @page < @shots.pages

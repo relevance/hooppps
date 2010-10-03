@@ -1,26 +1,27 @@
 Player View:
 
-  - Link to here from Shot page (use player name from shot title as link)
+  - Link to here from Shot page (use player name from shot title as link) @done
   - Link to here from List of Players
   
   # See some data about the player & use shot page as starting template
-    - player.name
-    - player.avatar_url
-    - player.url
-    - player.location
-    - Link to follow (player.twitter_screen_name)
-    - player.drafted_by_player_id
+    - player.name @done
+    - player.avatar_url @done
+    - player.url @done
+    - player.location @done
+    - Link to follow (player.twitter_screen_name) @done
+    - player.drafted_by_player_id as username
   
   # Player stats
-    - player.shots_count
-      - Link to shots (separate view) => player.shots , or paginate: player.shots(:page => 2, :per_page => 10)
-    - player.draftees_count
-      - List Draftees (separate view) => player.draftees
-    - player.followers_count
-    - player.following_count
+    - player.shots_count @done
+      - paginate shots: player.shots(:page => 2, :per_page => 10)
+    - player.draftees_count @done
+    - player.followers_count @done
+    - player.following_count @done
 
 
 Players List View(s):
+
+!!! api not sufficient yet for this
 
   - List "All-Stars"
     - player.name
@@ -38,11 +39,15 @@ Shot View:
     - comment
 
 Tags List View:
- 
+
+!!! api not sufficient yet for this
+
  - List of popular tags
  - Links to List of Shots (tagged)
  
 Navigation:
+
+!!! api not sufficient yet for this
 
   - Land on Grid Nav
     - Items:
@@ -52,4 +57,17 @@ Navigation:
       - About hooppps
       - Follow hooppps on Twitter
       - Find a Player
-  - Current "About" link in header will open this grid nav (will provide access to many points from anywhere in app)
+  - Current "About" link in header will open this grid nav (will provide access to many 
+    points from anywhere in app)
+  
+Breadcrumb history for "back" link:
+
+  - The "back" button in the header is a requesting url so it does not follow three pages 
+    back. It will loop after the third page between the 2nd and third.
+
+Format page:
+
+  - Design page for when "landscape mode" is in effect and if "viewport size" is not 
+    optimal for the hooppps design. This is a mobile dribbble browser... it is not the 
+    end-all app!
+  

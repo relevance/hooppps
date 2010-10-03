@@ -1,5 +1,6 @@
 Hooppps::Application.routes.draw do
   resources :shots
+  resources :player
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
