@@ -1,23 +1,72 @@
+
+Symbols list (appended at the end of todo task)
+===============================================
+* = it would be nice but not a showstopper
+** = Really would like to have it for R1!
+*** = Showstoper
+??? = Not sure about this... could use some feedback.
+
+
+60 hits / minute with API:
+
+ - Cache Data? ???***
+ - Get whitelisted? ???***
+  
+Navigation & Views:
+
+  1. Navigation
+      - Open on Index first index-page load (possibly make index?) ???
+      - Accessible from any page ***
+      - Links back to Popular Shots ***
+      - Links to Debut Shots *
+      - Links to Everyone Shots *
+      - Find a Player **
+      - About Hooppps ***
+      
+  2. Debut Shots List *
+      - Just like current index (popular shots list) *
+  
+  3. Everyone Shot List *
+      - Just like current index (popular shots list) *
+      
+  4. Popular Shot List (currently the index) ???
+      - Stay as index? ???
+      - Make into it's own view which is chosen by user? ???
+  
+  5. Go to Player **
+      - Text input that you type a dribbble username into and on submit it is appended 
+        to the end of the url: http://hooppps.heroku.com/player/{% userame here %}  **
+
+
 Player View:
 
-  - Link to here from Shot page (use player name from shot title as link) @done
-  - Link to here from List of Players
-  
-  # See some data about the player & use shot page as starting template
-    - player.name @done
-    - player.avatar_url @done
-    - player.url @done
-    - player.location @done
-    - Link to follow (player.twitter_screen_name) @done
-    - player.drafted_by_player_id as username
-  
-  # Player stats
-    - player.shots_count @done
-      - paginate shots: player.shots(:page => 2, :per_page => 10)
-    - player.draftees_count @done
-    - player.followers_count @done
-    - player.following_count @done
+  - paginate player shots: player.shots(:page => 2, :per_page => 10) **
+        
+Comments:
 
+    - fix the broken navigation for paginating through comments **
+
+Breadcrumb history for "back" link:
+
+  - The "back" button in the header is a requesting url so it does not follow three pages 
+    back. It will loop after the third page between the 2nd and third. ???
+  
+  - might be solved with better access to greater navigation ???
+
+Format page:
+
+  - Design page for when "landscape mode" is in effect and if "viewport size" is not 
+    optimal for the hooppps design. This is a mobile dribbble browser... it is not the 
+    end-all app! **
+
+
+
+
+
+
+===========================================================================================:
+FUTURE POST API UPGRADES:
+===========================================================================================:
 
 Players List View(s):
 
@@ -27,15 +76,6 @@ Players List View(s):
     - player.name
     - player.avatar_url
     - Link to player page
-    
-Shot View:
-    
-    Comments:
-    
-    - player.avatar_url @done
-    - player.name (link to player page) @done
-    - comment @done
-    - fix the broken navigation for paginating through comments
 
 Tags List View:
 
@@ -58,15 +98,4 @@ Navigation:
       - Find a Player
   - Current "About" link in header will open this grid nav (will provide access to many 
     points from anywhere in app)
-  
-Breadcrumb history for "back" link:
-
-  - The "back" button in the header is a requesting url so it does not follow three pages 
-    back. It will loop after the third page between the 2nd and third.
-
-Format page:
-
-  - Design page for when "landscape mode" is in effect and if "viewport size" is not 
-    optimal for the hooppps design. This is a mobile dribbble browser... it is not the 
-    end-all app!
   
