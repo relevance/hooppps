@@ -2,7 +2,7 @@ source 'http://rubygems.org'
 
 gem 'rails', '3.0.0'
 gem 'httparty'
-gem 'swish', :git => "git://github.com/michaelparenteau/swish.git"
+gem 'swish', :git => "git://github.com/michaelparenteau/swish.git", :branch => 'redis'
 gem 'haml', '3.0.18'
 
 # Bundle edge Rails instead:
