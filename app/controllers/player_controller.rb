@@ -8,6 +8,8 @@ class PlayerController < ApplicationController
   
   def show
     @player = Dribbble::Player.find(params[:id])
+    @page = real_page_number(params[:page])
+    @shots = @player.shots(:page => @page)
   end
   
 end
