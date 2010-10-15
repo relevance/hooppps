@@ -8,7 +8,8 @@ class ShotsController < ApplicationController
   
   def show
     @shot = Dribbble::Shot.find(params[:id])
-    @comments = @shot.comments(:page => real_page_number(params[:comments_page]))
+    @page = real_page_number(params[:page])
+    @comments = @shot.comments(:page => @page)
   end
 
   private

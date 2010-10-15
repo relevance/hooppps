@@ -9,5 +9,10 @@ module ApplicationHelper
       end
     end
   end
+
+  def resource(request)
+    return request.url.delete(request.query_string).delete("?")
+  end
+  
   
 end
