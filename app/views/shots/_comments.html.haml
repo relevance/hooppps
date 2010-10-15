@@ -15,4 +15,4 @@
   = link_to raw("next &rsaquo;"), "/shots/#{@shot.id}?page=#{@page + 1}", :class => 'big-pink-third'
 - elsif @page == @comments.pages && @comments.pages > 1
   = link_to raw("&laquo; back to start"), "/shots/#{@shot.id}", :class => 'big-pink-half'
-  = link_to raw("&lsaquo; previous comments"), "/shots/#{@shot.id}?page=#{@page - 1}", :class => 'big-pink-half'
+  = link_to raw("&lsaquo; prev comments"), "/shots/#{@shot.id}?page=#{@page - 1}", :class => 'big-pink-half'
