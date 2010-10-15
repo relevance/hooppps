@@ -1,6 +1,7 @@
 #nav
   %h2 Navigation
   %p 
-    = link_to raw("popular shots"), {:controller => "shots", :action => "index"}, :class => 'big-pink'
+    = link_to "popular shots", {:controller => "shots", :action => "index"}, :class => 'big-pink'
+    = link_to "go to player", {:controller => "player", :action => "search"}, :class => 'big-pink'
     %a.about{:href => '#about', :class => 'big-pink'} About Hooppps
 = render :partial => "shared/about"
