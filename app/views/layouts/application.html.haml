@@ -8,4 +8,9 @@
     / %meta{:name => 'viewport', :content => 'user-scalable=no, width=device-width'}
     %meta{:name => 'viewport', :content => 'width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=no;'}
   %body
+    #header
+      %h1.hooppps hooppps
+      %a.nav{:href => '#nav'} Nav
+      /= link_to "back", :back, :class => 'back_button'
     = yield
+    = render :partial => "shared/nav"  

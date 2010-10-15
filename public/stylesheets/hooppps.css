@@ -87,6 +87,21 @@ h3 {
   font-weight: bold;
   text-shadow: 0px 1px 1px #a14266;
 }
+
+#header a.nav:link,
+#header a.nav:visited {
+  right: 10px;
+  top: 8px;
+  padding: 5px 7px;
+  position: absolute;
+  -webkit-box-shadow: 0px 1px 2px #333;
+  border-radius: 4px;
+  background: #EA4C88 url(img/buttons/glare.png) 0 0 repeat-x;
+  font-weight: bold;
+  text-shadow: 0px 1px 1px #a14266;
+}
+
+#header a.nav:active,
 #header a.about:active,
 #header a.back_button:active {
   background: #ae446e url(img/buttons/glare.png) 0 0 repeat-x;
@@ -105,6 +120,17 @@ h3 {
 }
 #about a {
   color: #EA4C88;
+}
+
+/* nav
+---------------------------------------------*/
+#nav {
+  display: none;
+  margin: 10px;
+  border: 1px solid #666;
+  background: #ebebeb;
+  padding: 10px;
+  border-radius: 4px;
 }
 
 
@@ -195,8 +221,8 @@ h3 {
 
 /* Button styles
 ---------------------------------------------*/
-#content a.big-pink:link,
-#content a.big-pink:visited {
+a.big-pink:link,
+a.big-pink:visited {
   display: block;
   padding: 10px 0;
   -webkit-box-shadow: 0px 1px 2px #333;
@@ -208,14 +234,14 @@ h3 {
   margin: 10px 0;
   text-align: center;
 }
-#content a.big-pink:active,
-#content a.big-pink-half:active,
-#content a.big-pink-third:active,
-#content a.big-pink-quarter:active {
+a.big-pink:active,
+a.big-pink-half:active,
+a.big-pink-third:active,
+a.big-pink-quarter:active {
   background: #ae446e url(img/buttons/big-glare.png) 0 0 repeat-x;
 }
-#content a.big-pink-half:link,
-#content a.big-pink-half:visited {
+a.big-pink-half:link,
+a.big-pink-half:visited {
   display: inline-block;
   padding: 10px 0;
   -webkit-box-shadow: 0px 1px 2px #333;
@@ -228,8 +254,8 @@ h3 {
   text-align: center;
   width: 49%;
 }
-#content a.big-pink-third:link,
-#content a.big-pink-third:visited {
+a.big-pink-third:link,
+a.big-pink-third:visited {
   display: inline-block;
   padding: 10px 0;
   -webkit-box-shadow: 0px 1px 2px #333;
@@ -242,8 +268,8 @@ h3 {
   text-align: center;
   width: 32.5%;
 }
-#content a.big-pink-quarter:link,
-#content a.big-pink-quarter:visited {
+a.big-pink-quarter:link,
+a.big-pink-quarter:visited {
   display: inline-block;
   padding: 10px 0;
   -webkit-box-shadow: 0px 1px 2px #333;

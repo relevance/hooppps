@@ -59,8 +59,10 @@ Format page:
     optimal for the hooppps design. This is a mobile dribbble browser... it is not the 
     end-all app! **
 
+Sharing on Twitter:
 
-
+  - Directing Twitter links to Hooppps, and then redirecting from Hooppps to
+    either Hooppps or Dribbble based on the user agent of the incoming request. *
 
 
 

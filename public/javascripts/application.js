@@ -7,13 +7,21 @@ window.scrollTo(0, 1);
 
 $(function() {
   $('.about').toggle(function() {
-    $('#content').fadeOut(400, function() {
       $('.about').text('close');
       $('#about').slideDown(400);
+    }, function() {
+    $('#about').slideUp(400, function() {
+      $('.about').text('About Hoops');
+    });
+  }),
+  $('.nav').toggle(function() {
+    $('#content').fadeOut(400, function() {
+      $('.nav').text('close');
+      $('#nav').slideDown(400);
     });
   }, function() {
-    $('#about').slideUp(400, function() {
-      $('.about').text('about');
+    $('#nav').slideUp(400, function() {
+      $('.nav').text('nav');
       $('#content').fadeIn('fast');
     });
   });
