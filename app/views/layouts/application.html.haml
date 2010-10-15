@@ -11,6 +11,7 @@
     #header
       %h1.hooppps hooppps
       %a.nav{:href => '#nav'} Nav
-      /= link_to "back", :back, :class => 'back_button'
+      != back_button
+      /%a.back_button{:href => 'javascript:window.history.back()'} Back
     = yield
     = render :partial => "shared/nav"  
