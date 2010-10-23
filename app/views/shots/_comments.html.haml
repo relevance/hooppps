@@ -7,19 +7,12 @@
       %a.comment_player_name{:href => player_path(comment.player.username)}= comment.player.name
       %span.comment_body= comment.body
 
-//////////////////// Comments Page Nav is Broken
-/ %p
-/   Page
-/   = comments.page
-/ %p
-/   - if comments.page == 1
-/     %a{ :href => shot_path(shot.id, :comments_page => comments.page + 1) } More
-/     %a{ :href => shot_path(shot.id, :comments_page => comments.pages) } Last
-/   - if comments.page > 1 && comments.page < comments.pages
-/     %a{ :href => shot_path(shot.id) } First
-/     %a{ :href => shot_path(shot.id, :comments_page => comments.page - 1) } Back
-/     %a{ :href => shot_path(shot.id, :comments_page => comments.page + 1) } More
-/     %a{ :href => shot_path(shot.id, :comments_page => comments.pages) } Last
-/   - if comments.page == comments.pages
-/     %a{ :href => shot_path } First
-/     %a{ :href => shot_path(shot.id, :comments_page => comments.page - 1) } Back
+- if @page == 1 && @comments.pages > 1
+  = link_to raw("more comments &rsaquo;"), "/shots/#{@shot.id}?page=#{@page +1}", :class => 'big-pink'
+- elsif @page > 1 && @page < @comments.pages
+  = link_to raw("&laquo; back to start"), "/shots/#{@shot.id}" , :class => 'big-pink-third'
+  = link_to raw("&lsaquo; previous"), "/shots/#{@shot.id}?page=#{@page - 1}", :class => 'big-pink-third'
+  = link_to raw("next &rsaquo;"), "/shots/#{@shot.id}?page=#{@page + 1}", :class => 'big-pink-third'
+- elsif @page == @comments.pages && @comments.pages > 1
+  = link_to raw("&laquo; back to start"), "/shots/#{@shot.id}", :class => 'big-pink-half'
+  = link_to raw("&lsaquo; prev comments"), "/shots/#{@shot.id}?page=#{@page - 1}", :class => 'big-pink-half'

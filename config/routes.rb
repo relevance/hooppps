@@ -1,6 +1,8 @@
 Hooppps::Application.routes.draw do
+  match 'player/search' => 'player#search'
   resources :shots
   resources :player
+  
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
