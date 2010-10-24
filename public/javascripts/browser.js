@@ -20,9 +20,4 @@ $(document).ready(function() {
     $('#scroll-message').animate({opacity:0}, 300);
   });
 	
-	$(function() {		
-  	// initialize scrollable with mousewheel support
-  	$(".scrollable").scrollable({ vertical: true, mousewheel: true });	
-  });
-	
 });

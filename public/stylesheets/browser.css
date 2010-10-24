@@ -64,10 +64,16 @@ a#ribben {
   width: 272px;
   height: 410px;
   position: absolute;
-  overflow: hidden;
   top: 210px;
   left: 87px;
   background-color: #b0b0b0;
+  overflow: hidden;
+}
+#track {
+  width: 272px;
+  height:10000px;
+  position: absolute;
+  overflow: hidden;
 }
 #right {
   padding: 115px 0 0 440px;
@@ -92,11 +98,12 @@ a#ribben {
   font-size: 1.7em;
 }
 h2#notice {
-  text-indent: -9999em;
-  overflow: hidden;
-  height: 150px;
-  background: transparent url(../img/notice.png) 20px 35px no-repeat;
+  font-size: 2.4em;
+  line-height: 1.2em;
+  height: 120px;
+  padding: 35px 0 0 25px;
   border-top: 1px solid #000;
+  color: #bbb;
 }
 a#github {
   width: 202px;
@@ -223,4 +230,7 @@ a#twitter {
 }
 #content h3 {
   margin-bottom: 10px;
+}
+p.copyright {
+  margin-top: 10px;
 }

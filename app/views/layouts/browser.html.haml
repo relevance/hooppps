@@ -10,15 +10,18 @@
   %body  
     #browser-content
       %a#ribben{:href => "http://dribbble.com"} go to dribbble
-      #scroll-message hover &amp; scroll or use &uarr;&darr; keys 
+      #scroll-message 
+        / hover &amp; scroll or use &uarr;&darr; keys 
+        hover &amp scroll coming soon
       #frame.scrollable
-        #header
-          %h1.hooppps hooppps
-          %a.nav{:href => '#nav'} Nav
-          != back_button
-          /%a.back_button{:href => 'javascript:window.history.back()'} Back
-        = yield
-        = render :partial => "shared/nav"
+        #track
+          #header
+            %h1.hooppps hooppps
+            %a.nav{:href => '#nav'} Nav
+            != back_button
+            /%a.back_button{:href => 'javascript:window.history.back()'} Back
+          = yield
+          = render :partial => "shared/nav"
       #right
         #heading
           %h1 hooppps

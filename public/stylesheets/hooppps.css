@@ -19,7 +19,14 @@ a:visited {
 h3 {
   font-weight: normal;
 }
-
+input[type=text] {
+  font-size: 18px;
+  color: #666;
+  padding: 10px;
+  width: 92%;
+  margin-right: 10px;
+  font-weight: bold;
+}
 
 /* structure & #content specified text
 ---------------------------------------------*/
@@ -127,12 +134,8 @@ h3 {
 #nav {
   display: none;
   margin: 10px;
-  border: 1px solid #666;
-  background: #ebebeb;
-  padding: 10px;
   border-radius: 4px;
 }
-
 
 /* shot stats
 ---------------------------------------------*/
@@ -282,7 +285,36 @@ a.big-pink-quarter:visited {
   text-align: center;
   width: 24%;
 }
+input[type=submit] {
+  display: block;
+  padding: 10px 0;
+  -webkit-box-shadow: 0px 1px 2px #333;
+  border-radius: 4px;
+  background: #EA4C88 url(img/buttons/big-glare.png) 0 0 repeat-x;
+  font-weight: bold;
+  font-size: 16px;
+  text-shadow: 0px 1px 1px #a14266;
+  margin: 10px 0;
+  text-align: center;
+  color: #fff;
+  width: 100%;
+  border: 0;
+}
 
+#nav a.button {
+  padding: 5px 7px;
+  -webkit-box-shadow: 0px 1px 2px #333;
+  border-radius: 4px;
+  background: #ccc url(img/buttons/bigger-glare.png) 0 0 repeat-x;
+  font-weight: bold;
+  text-shadow: 0px 1px 2px #fff;
+  display: block;
+  font-size: 18px;
+  line-height: 50px;
+  margin-bottom: 10px;
+  color: #333;
+  text-align: center;
+}
 
 /* player stats
 ---------------------------------------------*/
