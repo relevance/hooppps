@@ -25,6 +25,19 @@ $(function() {
       $('#content').fadeIn('fast');
     });
   });
+  
+  $('#content').mousewheel(function(event, delta, deltaX, deltaY) {
+    event.preventDefault();
+
+    // SPIKE!!!  doesn't handle bounds-checking or scroll velocity
+    var margin = $(this).css("margin-top") || 0;
+    margin = parseInt(margin.split("px")[0]);
+    margin = (delta > 0) ? margin+10 : margin-10;
+    margin = margin + "px";
+    // console.debug(margin);
+    
+    $(this).css("margin-top", margin);
+  });
 });
 
 
