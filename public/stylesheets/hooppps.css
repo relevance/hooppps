@@ -77,7 +77,9 @@ input[type=text] {
   padding: 5px 7px;
   position: absolute;
   -webkit-box-shadow: 0px 1px 2px #333;
-  border-radius: 4px;
+  -moz-box-shadow: 0px 1px 2px #333;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
   background: #EA4C88 url(img/buttons/glare.png) 0 0 repeat-x;
   font-weight: bold;
   text-shadow: 0px 1px 1px #a14266;
@@ -102,7 +104,9 @@ input[type=text] {
   padding: 5px 7px;
   position: absolute;
   -webkit-box-shadow: 0px 1px 2px #333;
-  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-box-shadow: 0px 1px 2px #333;
+  -moz-border-radius: 4px;
   background: #EA4C88 url(img/buttons/glare.png) 0 0 repeat-x;
   font-weight: bold;
   text-shadow: 0px 1px 1px #a14266;
@@ -184,7 +188,9 @@ input[type=text] {
   top: 8px;
   padding: 5px 7px;
   -webkit-box-shadow: 0px 1px 2px #333;
-  border-radius: 4px;
+  -moz-box-shadow: 0px 1px 2px #333;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
   background: #666 url(img/buttons/glare.png) 0 0 repeat-x;
   font-weight: bold;
   text-shadow: 0px 1px 1px #000;
@@ -207,7 +213,8 @@ input[type=text] {
   left: 10px;
   width: 50px;
   height: 50px;
-  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
   -webkit-box-shadow: 0px 1px 2px #000;
 }
 #content .shot_meta h2 span {
@@ -229,7 +236,8 @@ a.big-pink:visited {
   display: block;
   padding: 10px 0;
   -webkit-box-shadow: 0px 1px 2px #333;
-  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
   background: #EA4C88 url(img/buttons/big-glare.png) 0 0 repeat-x;
   font-weight: bold;
   font-size: 16px;
@@ -248,7 +256,8 @@ a.big-pink-half:visited {
   display: inline-block;
   padding: 10px 0;
   -webkit-box-shadow: 0px 1px 2px #333;
-  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
   background: #EA4C88 url(img/buttons/big-glare.png) 0 0 repeat-x;
   font-weight: bold;
   font-size: 16px;
@@ -262,7 +271,9 @@ a.big-pink-third:visited {
   display: inline-block;
   padding: 10px 0;
   -webkit-box-shadow: 0px 1px 2px #333;
-  border-radius: 4px;
+  -moz-box-shadow: 0px 1px 2px #333;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
   background: #EA4C88 url(img/buttons/big-glare.png) 0 0 repeat-x;
   font-weight: bold;
   font-size: 12px;
@@ -289,7 +300,9 @@ input[type=submit] {
   display: block;
   padding: 10px 0;
   -webkit-box-shadow: 0px 1px 2px #333;
-  border-radius: 4px;
+  -moz-box-shadow: 0px 1px 2px #333;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
   background: #EA4C88 url(img/buttons/big-glare.png) 0 0 repeat-x;
   font-weight: bold;
   font-size: 16px;
@@ -394,3 +407,12 @@ input[type=submit] {
   overflow: hidden;
 }
 
+/* comments
+---------------------------------------------*/
+
+.error-page {
+  text-align: center;
+  background: #ebebeb url(img/airball.png) center 100px no-repeat;
+  height: 235px;
+  margin: 10px;
+}

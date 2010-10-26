@@ -26,7 +26,7 @@ $(function() {
     });
   });
   
-  $('#content').mousewheel(function(event, delta, deltaX, deltaY) {
+  $('#track').mousewheel(function(event, delta, deltaX, deltaY) {
     event.preventDefault();
 
     // SPIKE!!!  doesn't handle bounds-checking or scroll velocity

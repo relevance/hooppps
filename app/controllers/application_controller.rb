@@ -25,5 +25,5 @@ class ApplicationController < ActionController::Base
   def real_page_number(param)
     param.to_i.nonzero? || 1
   end
-
+  
 end
