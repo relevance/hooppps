@@ -4,6 +4,7 @@ gem 'rails', '3.0.0'
 gem 'httparty'
 gem 'swish', :git => "git://github.com/michaelparenteau/swish.git"
 gem 'haml', '3.0.18'
+gem "vidibus-routing_error"
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'

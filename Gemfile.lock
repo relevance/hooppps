@@ -74,6 +74,8 @@ GEM
     treetop (1.4.8)
       polyglot (>= 0.3.1)
     tzinfo (0.3.23)
+    vidibus-routing_error (0.1.5)
+      rails (>= 3.0.0.rc)
 
 PLATFORMS
   ruby
@@ -84,3 +86,4 @@ DEPENDENCIES
   rails (= 3.0.0)
   sqlite3-ruby
   swish!
+  vidibus-routing_error

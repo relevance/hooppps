@@ -411,10 +411,17 @@ input[type=submit] {
 
 /* comments
 ---------------------------------------------*/
-
+.error-page h2 {
+  font-size: 18px;
+  font-weight: bold;
+}
+.error-page p {
+  font-size: 12px;
+  margin: 5px 0;
+} 
 .error-page {
   text-align: center;
-  background: #ebebeb url(img/airball.png) center 100px no-repeat;
+  background: #ebebeb url(img/airball.png) center 70px no-repeat;
   height: 235px;
   margin: 10px;
 }
