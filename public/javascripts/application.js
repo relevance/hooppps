@@ -13,7 +13,7 @@ function pixels(str) {
 function newMargin(margin, delta, maxHeight) {
   maxHeight = maxHeight * -1;
   
-  margin = (delta > 0) ? margin+30 : margin-30;
+  margin += delta;
   margin = (margin > 0) ? 0 : margin;
   margin = (margin < maxHeight) ? maxHeight : margin;
   margin = margin + "px";
@@ -42,7 +42,7 @@ $(function() {
     });
   });
   
-  $('#track').mousewheel(function(event, delta, deltaX, deltaY) {
+  $('#track').mousewheel(function(event, delta) {
     event.preventDefault();
 
     var margin = pixels($(this).css("margin-top")) || 0;
