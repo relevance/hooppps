@@ -3,15 +3,12 @@ class ApplicationController < ActionController::Base
   layout :detect_browser
   before_filter :authenticate
     
-  protected  
+  protected
+    
   def authenticate
     authenticate_or_request_with_http_basic do |username, password|
       username == "password" && password == "hooppps"
     end
-  end
-  
-  def render_optional_error_file(status_code)
-    render :template => "/errors/404.html.haml", :status => status, :layout => detect_browser
   end
   
   private
