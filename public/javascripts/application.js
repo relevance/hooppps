@@ -6,7 +6,6 @@ window.scrollTo(0, 1);
 // ------------------------------------------
 
 function pixels(str) {
-  // TODO: string.split() doesn't work on IE, right?
   return parseInt(str.split("px")[0]);
 }
 
