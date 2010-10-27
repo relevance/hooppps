@@ -170,7 +170,11 @@ a#twitter {
   width: 203px;
   background: transparent url(../img/relevance.png) 0 0 no-repeat;
 }
-
+#browser-footer {
+  width: 960px;
+  margin: 0 auto;
+  color: #fff;
+}
 /*hooppps for browser frame fixes
 ================================================================*/
 #header a.nav:link, #header a.nav:visited,
