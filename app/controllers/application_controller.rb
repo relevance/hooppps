@@ -11,8 +11,7 @@ class ApplicationController < ActionController::Base
   end
   
   def render_optional_error_file(status_code)
-    status = interpret_status(status_code)
-    render :template => "/errors/#{status[0,3]}.html.haml", :status => status, :layout => :detect_browser
+    render :template => "/errors/404.html.haml", :status => status, :layout => true
   end
   
   private
