@@ -19,7 +19,7 @@ Hooppps is built on Rails 3 and uses the [Swish](http://github.com/jeremyw/swish
 
 ## USAGE
 
-Good news: hooppps is free. Use it! :)
+Good news: hooppps is free. Use it! :) You can clone this, and run it on your own Heroku account if you like... show us what you do!
 
 
 ## Contribute
@@ -28,7 +28,7 @@ This is a first pass. We would love your suggestions and/or contributions. Send 
 
 **Current contributor list:**
 
-* [Michael Parenteau](http://twitter.com/parenteau) *- Original concept &amp; design*
+* [Michael Parenteau](http://twitter.com/parenteau)
 * [Jon Distad](http://twitter.com/jondistad)
 * [Alex Redington](http://twitter.com/holy_chao)
 * [Larry Karnowski](http://twitter.com/karnowski)
