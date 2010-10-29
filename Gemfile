@@ -1,7 +1,7 @@
 source 'http://rubygems.org'
 
 gem 'rails', '3.0.0'
-gem 'swish', :git => "git://github.com/michaelparenteau/swish.git", :branch => 'redis'
+gem 'swish', :git => "git://github.com/michaelparenteau/swish.git"
 gem 'haml', '3.0.18'
 gem "vidibus-routing_error"
 
