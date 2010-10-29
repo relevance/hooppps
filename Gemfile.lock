@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/michaelparenteau/swish.git
-  revision: 9054ff26da045eba9899222855dd3f80d53231ae
+  revision: cec797d95c20f6e54da15452339bad907768c4b5
   specs:
     swish (0.6.2)
       SystemTimer (~> 1.2)
