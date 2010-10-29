@@ -1,1 +1,1 @@
-Dribbble::Config.enable_redis = true
+# Dribbble::Config.enable_redis = true
