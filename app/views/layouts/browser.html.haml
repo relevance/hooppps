@@ -1,0 +1,47 @@
+!!! html
+%html
+  %head
+    %title hooppps | a mobile dribbble browser
+    = stylesheet_link_tag 'hooppps', 'browser'
+    = javascript_include_tag 'jquery','application', 'browser', 'jquery.mousewheel'
+    = csrf_meta_tag 
+    / %meta{:name => 'viewport', :content => 'user-scalable=no, width=device-width'}
+    %meta{:name => 'viewport', :content => 'width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=no;'}
+  %body  
+    #browser-content
+      %a#ribben{:href => "http://dribbble.com"} go to dribbble
+      #scroll-message 
+        / hover &amp; scroll or use &uarr;&darr; keys 
+        hover &amp scroll
+      #frame.scrollable
+        #track
+          #header
+            %h1.hooppps hooppps
+            %a.nav{:href => '#nav'} Nav
+            != back_button
+            /%a.back_button{:href => 'javascript:window.history.back()'} Back
+          = yield
+          = render :partial => "shared/nav"
+      #right
+        #heading
+          %h1 hooppps
+          %p 
+            A free open-source mobile 
+            %a{:href => "http://dribbble.com"} dribbble
+            browser
+        %h2#notice hooppps was not meant for the browser you are currently using. Come back on your mobile device.
+        %a#github.fadein{:href => "http://github.com/relevance/hooppps"} code on github
+        %a#twitter.fadein{:href => "http://twitter.com/share?text=Check%20out%20@hooppps:%20a%20mobile%20@dribbble%20browser&url=http://hooppps.com"} share on twitter
+        #browser-about
+          %p 
+            hooppps was created by Relevance, Inc. Hooppps is built on Rails 3 and uses the swish gem. 
+            The code is hosted on github and is ready for your design/dev love. hooppps is in no way 
+            affiliated with dribbble but is obviously a huge fan! **Not just for iPhones.
+        #relevance.footer
+          Created by
+          %a.fadein{:href => "http://thinkrelevance.com"} relevance
+        #heroku.footer
+          Hosted on
+          %a.fadein{:href => "http://heroku.com"} heroku
+    / #browser-footer
+    /   hello

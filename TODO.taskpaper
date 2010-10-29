@@ -16,8 +16,8 @@ Navigation & Views:
 
   1. Navigation
       - Open on Index first index-page load (possibly make index?) ???
-      - Accessible from any page ***
-      - Links back to Popular Shots ***
+      - Accessible from any page *** @done
+      - Links back to Popular Shots *** @done
       - Links to Debut Shots *
       - Links to Everyone Shots *
       - Find a Player **
@@ -33,14 +33,14 @@ Navigation & Views:
       - Stay as index? ???
       - Make into it's own view which is chosen by user? ???
   
-  5. Go to Player **
-      - Text input that you type a dribbble username into and on submit it is appended 
-        to the end of the url: http://hooppps.heroku.com/player/{% userame here %}  **
+  5. Go to Player ** 
+      - Text input that you type a dribbble username into and on submit it is appended  @done
+      - to the end of the url: http://hooppps.heroku.com/player/{% userame here %}  ** @done
 
 
 Player View:
 
-  - paginate player shots: player.shots(:page => 2, :per_page => 10) **
+  - paginate player shots: player.shots(:page => 2, :per_page => 10) ** @done
         
 Comments:
 
@@ -48,10 +48,10 @@ Comments:
 
 Breadcrumb history for "back" link:
 
-  - The "back" button in the header is a requesting url so it does not follow three pages 
-    back. It will loop after the third page between the 2nd and third. ???
+  - The "back" button in the header is a requesting url so it does not follow three pages  @done
+  - back. It will loop after the third page between the 2nd and third. ???  @done
   
-  - might be solved with better access to greater navigation ???
+  - might be solved with better access to greater navigation ??? @done
 
 Format page:
 

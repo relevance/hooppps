@@ -3,6 +3,7 @@ source 'http://rubygems.org'
 gem 'rails', '3.0.0'
 gem 'swish', :git => "git://github.com/michaelparenteau/swish.git", :branch => 'redis'
 gem 'haml', '3.0.18'
+gem "vidibus-routing_error"
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
