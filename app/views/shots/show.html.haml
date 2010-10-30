@@ -5,7 +5,7 @@
       = @shot.title
       %span
         %strong By:
-        %a{:href => player_path(@shot.player.username)} 
+        %a{:href => player_path(@shot.player.id)} 
           = @shot.player.name
         - if @shot.player.name == nil
           %a{:href => player_path(@shot.player.username)} 
