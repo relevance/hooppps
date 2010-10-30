@@ -227,15 +227,20 @@ a#twitter {
   text-shadow: 0px 1px 1px #000;
   font-size: 12px;
 }
-#content .shot_meta {
+#content .shot_meta,
+#about .shot_meta {
   margin-bottom: 10px;
 }
-#content .shot_meta h2 {
+#content .shot_meta h2,
+#about .shot_meta h2 {
   font-size: 18px;
   padding-top: 5px;
   font-weight: bold;
   text-shadow: none;
   color: #444;
+}
+#about .shot_meta h2 {
+  padding-top: 10px;
 }
 #content .shot_meta h2 span a:link,
 #content .shot_meta h2 span a:visited {

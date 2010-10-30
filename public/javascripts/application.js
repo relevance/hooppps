@@ -21,21 +21,40 @@ function newMargin(margin, delta, maxHeight) {
 }
 
 $(function() {
-  $('.about').toggle(function() {
-      $('.about').text('close');
-      $('#about').slideDown(400);
-    }, function() {
-    $('#about').slideUp(400, function() {
-      $('.about').text('About Hoops');
+  // $('.about').toggle(function() {
+  //       $('.about').text('close');
+  //       $('#nav').fadeOut(400);
+  //       $('#about').fadeIn(400);
+  //     }, function() {
+  //     $('#about').slideUp(400, function() {
+  //       $('.about').text('About Hoops');
+  //     });
+  //   }),
+  $('.about').click(function() {
+    $('#nav').fadeOut(400, function() {
+      $('#about').fadeIn(400);
+      $('.nav').click(function() {
+        $('#about').fadeOut(400, function() {
+          $('#nav').fadeIn(400);
+        });
+      });
     });
-  }),
+  });
+  
+  $('.back-to-nav').click(function() {
+    $('#about').fadeOut(400, function() {
+      $('#nav').fadeIn(400);
+      $('.back-to-nav').fadeOut('fast')
+    });
+  
+  });
   $('.nav').toggle(function() {
     $('#content').fadeOut(400, function() {
       $('.nav').text('close');
-      $('#nav').slideDown(400);
+      $('#nav').fadeIn(400);
     });
   }, function() {
-    $('#nav').slideUp(400, function() {
+    $('#nav').fadeOut(400, function() {
       $('.nav').text('nav');
       $('#content').fadeIn('fast');
     });

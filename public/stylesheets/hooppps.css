@@ -123,11 +123,10 @@ input[type=text] {
 ---------------------------------------------*/
 #about {
   display: none;
-  margin: 10px;
-  border: 1px solid #666;
-  background: #ebebeb;
   padding: 10px;
-  border-radius: 4px;
+}
+#about h2 {
+  padding-top: 30px;
 }
 #about a {
   color: #EA4C88;
@@ -199,15 +198,18 @@ input[type=text] {
 
 /* shot title & meta
 ---------------------------------------------*/
-#content .shot_meta {
+#content .shot_meta,
+#about .shot_meta {
   min-height: 50px;
 }
-#content .shot_meta h2 {
+#content .shot_meta h2,
+#about .shot_meta h2 {
   padding: 0 0 0 65px;
   color: #333;
   text-shadow: 0px 1px 1px #eee;
 }
-#content .shot_meta img {
+#content .shot_meta img,
+#about .shot_meta img {
   position: absolute;
   vertical-align: top;
   left: 10px;
@@ -217,7 +219,8 @@ input[type=text] {
   -moz-border-radius: 5px;
   -webkit-box-shadow: 0px 1px 2px #000;
 }
-#content .shot_meta h2 span {
+#content .shot_meta h2 span,
+#about .shot_meta h2 span {
   font-weight: normal;
   font-size: 14px;
   display: block;
@@ -329,6 +332,21 @@ input[type=submit] {
   margin-bottom: 10px;
   color: #333;
   text-align: center;
+}
+#about a.back-to-nav {
+  left: 10px;
+  top: 8px;
+  padding: 5px 7px;
+  position: absolute;
+  -webkit-box-shadow: 0px 1px 2px #333;
+  -webkit-border-radius: 4px;
+  -moz-box-shadow: 0px 1px 2px #333;
+  -moz-border-radius: 4px;
+  background: #EA4C88 url(img/buttons/glare.png) 0 0 repeat-x;
+  font-weight: bold;
+  text-shadow: 0px 1px 1px #a14266;
+  color: #fff;
+  font-size: 12px;
 }
 
 /* player stats

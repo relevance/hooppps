@@ -58,7 +58,7 @@ This is a first pass. We would love your suggestions and/or contributions. Send 
 * Dribbble is righteous! [http://dribbble.com](http://dribbble.com)
 * Relevance, Inc. [http://thinkrelevance.com](http://thinkrelevance.com)
 
-== LICENSE
+## LICENSE
 
 (The MIT License)
 
