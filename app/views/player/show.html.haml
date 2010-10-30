@@ -19,8 +19,11 @@
   
   = render :partial => "player_stats"
   
-  %a.big-pink{:href => "http://twitter.com/"+@player.twitter_screen_name , :target => "_blank"} Follow Player on Twitter
-  
+  -if @current_layout == "browser"
+    %a.big-pink{:href => "http://twitter.com/"+@player.twitter_screen_name , :target => "_blank"} Follow Player on Twitter
+  - else
+    %a.big-pink{:href => "http://m.twitter.com/"+@player.twitter_screen_name , :target => "_blank"} Follow Player on Twitter
+    
   - if @player.name == nil
     %h3=@player.username+'\'s shots:'
   - else

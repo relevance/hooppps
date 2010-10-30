@@ -18,7 +18,9 @@
       = @shot.comments_count
     %li.likes.no-view 
       = @shot.likes_count
-  %a.big-pink{:href => "http://twitter.com/share?text=Found%20on%20@dribbble:&url="+@shot.url+"&via=hooppps" , :target => "_blank"} Share this shot on twitter
-
+  - if @current_layout == "browser"
+    %a.big-pink{:href => "http://twitter.com/share?text=Found%20on%20@dribbble:&url="+@shot.url+"&via=hooppps" , :target => "_blank"} Share this shot on twitter
+  - else
+    %a.big-pink{:href => "http://m.twitter.com/share?text=Found%20on%20@dribbble:&url="+@shot.url+"&via=hooppps" , :target => "_blank"} Share this shot on twitter
   #comments
     = render 'comments', :comments => @comments, :shot => @shot

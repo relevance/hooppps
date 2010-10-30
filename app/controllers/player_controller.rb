@@ -17,10 +17,12 @@ class PlayerController < ApplicationController
       else
         @player.name
     end
+    @current_layout = current_layout
   end
   
   def search
     @title = 'Go to Player'
+    @current_layout = current_layout
   end
   
 end

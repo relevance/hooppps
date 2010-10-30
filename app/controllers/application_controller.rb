@@ -28,6 +28,15 @@ class ApplicationController < ActionController::Base
       return "browser"
   end
   
+  def current_layout
+      agent = request.headers["HTTP_USER_AGENT"].downcase
+      MOBILE_BROWSERS.each do |m|
+        return "application" if agent.match(m)
+      end
+      return "browser"
+  end
+  
+  
   def real_page_number(param)
     param.to_i.nonzero? || 1
   end
