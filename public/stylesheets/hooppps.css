@@ -136,6 +136,12 @@ input[type=text] {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
 }
+.copyright {
+  margin-top: 10px;
+}
+#about a.big-pink {
+  color: #fff;
+}
 
 /* nav
 ---------------------------------------------*/

@@ -245,6 +245,10 @@ a#twitter {
 #about .shot_meta h2 {
   padding-top: 10px;
 }
+#about .about-content {
+  font-size: 12px;
+  line-height: 1.4em;
+}
 #content .shot_meta h2 span a:link,
 #content .shot_meta h2 span a:visited {
   color: #ec4383;

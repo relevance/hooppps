@@ -33,11 +33,6 @@ $(function() {
   $('.about').click(function() {
     $('#nav').fadeOut(400, function() {
       $('#about').fadeIn(400);
-      $('.nav').click(function() {
-        $('#about').fadeOut(400, function() {
-          $('#nav').fadeIn(400);
-        });
-      });
     });
   });
   
@@ -64,6 +59,8 @@ $(function() {
     $('#nav').fadeOut(400, function() {
       $('.nav').text('nav');
       $('#content').fadeIn('fast');
+      $('#nav').fadeOut('fast');
+      $('#about').fadeOut('fast')
     });
   });
   
