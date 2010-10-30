@@ -1,6 +1,6 @@
 # Hooppps
   
-## DESCRIPTION
+### DESCRIPTION
 
 Hooppps is a mobile-friendly [dribbble](http://dribbble.com) browser. Why? Well, we love dribbble and we all have iPhones, Androids, and other smart-phones, but dribbble does not have a mobile stylesheet. When the dribbble API came out, some iPhone apps hit the app store but that didn't service everybody and they cost money for a limited version of dribbble. We just wanted to browse shots and players!
 
