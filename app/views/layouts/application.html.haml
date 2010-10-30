@@ -1,7 +1,11 @@
 !!! html
 %html
   %head
-    %title hooppps
+    %title
+      - if @title == nil 
+        hooppps | Airball! (404)
+      - else  
+        = 'hooppps | '+ @title 
     = stylesheet_link_tag 'hooppps'
     = javascript_include_tag 'jquery','application'
     = csrf_meta_tag 

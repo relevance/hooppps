@@ -14,7 +14,7 @@ class ApplicationController < ActionController::Base
   end
   
   def render_not_found(exception)
-    render :template => "errors/404", :status => 404 
+    render :template => "errors/404", :status => 404
   end
   
   private

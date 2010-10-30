@@ -17,7 +17,7 @@
         #track
           #header
             %h1.hooppps hooppps
-            %a.nav{:href => '#nav'} Nav
+            %a.nav{:href => '#nav'} nav
             != back_button
             /%a.back_button{:href => 'javascript:window.history.back()'} Back
           = yield
@@ -27,11 +27,11 @@
           %h1 hooppps
           %p 
             A free open-source mobile 
-            %a{:href => "http://dribbble.com"} dribbble
+            %a{:href => "http://dribbble.com", :target => '_blank'} dribbble
             browser
         %h2#notice hooppps was not meant for the browser you are currently using. Come back on your mobile device.
-        %a#github.fadein{:href => "http://github.com/relevance/hooppps"} code on github
-        %a#twitter.fadein{:href => "http://twitter.com/share?text=Check%20out%20@hooppps:%20a%20mobile%20@dribbble%20browser&url=http://hooppps.com"} share on twitter
+        %a#github.fadein{:href => "http://github.com/relevance/hooppps", :target => '_blank'} code on github
+        %a#twitter.fadein{:href => "http://twitter.com/share?text=Check%20out%20@hooppps:%20a%20mobile%20@dribbble%20browser&url=http://hooppps.com", :target => '_blank'} share on twitter
         #browser-about
           %p 
             hooppps was created by Relevance, Inc. Hooppps is built on Rails 3 and uses the swish gem. 
@@ -39,9 +39,9 @@
             affiliated with dribbble but is obviously a huge fan! **Not just for iPhones.
         #relevance.footer
           Created by
-          %a.fadein{:href => "http://thinkrelevance.com"} relevance
+          %a.fadein{:href => "http://thinkrelevance.com", :target => '_blank'} relevance
         #heroku.footer
           Hosted on
-          %a.fadein{:href => "http://heroku.com"} heroku
+          %a.fadein{:href => "http://heroku.com", :target => '_blank'} heroku
     / #browser-footer
     /   hello
