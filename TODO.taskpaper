@@ -9,8 +9,7 @@ Symbols list (appended at the end of todo task)
 
 60 hits / minute with API:
 
- - Cache Data? ???***
- - Get whitelisted? ???***
+ - Cache Data? ???*** @done <-- Maybe improved? Currently using 50mb free Redis on Heroku
   
 Navigation & Views:
 
@@ -20,8 +19,8 @@ Navigation & Views:
       - Links back to Popular Shots *** @done
       - Links to Debut Shots *
       - Links to Everyone Shots *
-      - Find a Player **
-      - About Hooppps ***
+      - Find a Player ** @done
+      - About Hooppps *** @done
       
   2. Debut Shots List *
       - Just like current index (popular shots list) *
@@ -44,7 +43,7 @@ Player View:
         
 Comments:
 
-    - fix the broken navigation for paginating through comments **
+    - fix the broken navigation for paginating through comments ** @done
 
 Breadcrumb history for "back" link:
 
@@ -55,14 +54,8 @@ Breadcrumb history for "back" link:
 
 Format page:
 
-  - Design page for when "landscape mode" is in effect and if "viewport size" is not 
-    optimal for the hooppps design. This is a mobile dribbble browser... it is not the 
-    end-all app! **
+  - Optimize for landscape view **
 
-Sharing on Twitter:
-
-  - Directing Twitter links to Hooppps, and then redirecting from Hooppps to
-    either Hooppps or Dribbble based on the user agent of the incoming request. *
 
 
 
