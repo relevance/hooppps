@@ -125,9 +125,7 @@ input[type=text] {
   display: none;
   padding: 10px;
 }
-#about h2 {
-  padding-top: 30px;
-}
+
 #about a {
   color: #EA4C88;
 }
@@ -346,7 +344,6 @@ input[type=submit] {
   font-weight: bold;
   text-shadow: 0px 1px 1px #a14266;
   color: #fff;
-  font-size: 12px;
 }
 
 /* player stats
