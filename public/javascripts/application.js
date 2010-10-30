@@ -21,6 +21,15 @@ function newMargin(margin, delta, maxHeight) {
 }
 
 $(function() {
+  // $('.about').toggle(function() {
+  //       $('.about').text('close');
+  //       $('#nav').fadeOut(400);
+  //       $('#about').fadeIn(400);
+  //     }, function() {
+  //     $('#about').slideUp(400, function() {
+  //       $('.about').text('About Hoops');
+  //     });
+  //   }),
   $('.about').click(function() {
     $('#nav').fadeOut(400, function() {
       $('#about').fadeIn(400);
@@ -41,6 +50,7 @@ $(function() {
   
   $('.back_button').click(function() {
     $('#nav').fadeOut(400, function() {
+      $('.nav').text('nav');
       $('#content').fadeIn(400);
     });
   });
