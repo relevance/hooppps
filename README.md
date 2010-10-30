@@ -6,7 +6,7 @@ Hooppps is a mobile-friendly [dribbble](http://dribbble.com) browser. Why? Well,
 
 Hooppps is built on Rails 3 and uses the [Swish](http://github.com/jeremyw/swish) gem to use the dribbble API. 
 
-## Features
+## FEATURES
 
 * Popular Shot landing page (lists shots and some data about the shot)
 * Link to shot page
@@ -22,7 +22,7 @@ Hooppps is built on Rails 3 and uses the [Swish](http://github.com/jeremyw/swish
 Good news: hooppps is free. Use it! :) You can clone this, and run it on your own Heroku account if you like... show us what you do!
 
 
-## Contribute
+## CONTRIBUTE
 
 This is a first pass. We would love your suggestions and/or contributions. Send a pull request, fork the project, send design comps... whatever you feel compelled to do. The code is all here so you can do whatever you like with it! 
 
@@ -42,7 +42,7 @@ This is a first pass. We would love your suggestions and/or contributions. Send 
 * Behavioral details? (note: don't bog the project down with making views huge and giant plugins)
 * Stay on top of API changes / additions
 
-## Run project in dev mode
+## TO RUN PROJECT IN DEV MODE
 
 1. Make sure you have ruby-1.8.7-p302 &amp; Rails 3 installed
 2. Install Bundler: `gem install bundler`
@@ -52,7 +52,7 @@ This is a first pass. We would love your suggestions and/or contributions. Send 
 6. On phone on wifi use http://your-ip-address:3000
 7. Play &amp; Enjoy!
 
-## Misc. URLS
+## MISC. URLS
 
 * Follow Hooppps on twitter [http://twitter.com/hooppps](http://twitter.com/hooppps)
 * Dribbble is righteous! [http://dribbble.com](http://dribbble.com)
