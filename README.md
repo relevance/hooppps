@@ -29,6 +29,7 @@ This is a first pass. We would love your suggestions and/or contributions. Send 
 **Current contributor list:**
 
 * [Michael Parenteau](http://twitter.com/parenteau)
+* [Jared Pace](http://twitter.com/jdpace)
 * [Jon Distad](http://twitter.com/jondistad)
 * [Alex Redington](http://twitter.com/holy_chao)
 * [Larry Karnowski](http://twitter.com/karnowski)
