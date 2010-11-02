@@ -1,18 +1,11 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery
   layout :detect_browser
-  before_filter :authenticate
 
   rescue_from ActionController::RoutingError, ActiveRecord::RecordNotFound, :with => :render_not_found
     
   protected
-    
-  def authenticate
-    authenticate_or_request_with_http_basic do |username, password|
-      username == "password" && password == "hooppps"
-    end
-  end
-  
+      
   def render_not_found(exception)
     render :template => "errors/404", :status => 404
   end
