@@ -3,7 +3,7 @@
   %head
     %title hooppps | a mobile dribbble browser
     = stylesheet_link_tag 'hooppps', 'browser'
-    = javascript_include_tag 'jquery','application', 'browser', 'jquery.mousewheel','ga'
+    = javascript_include_tag 'jquery','application', 'browser', 'jquery.mousewheel'
     = csrf_meta_tag 
     / %meta{:name => 'viewport', :content => 'user-scalable=no, width=device-width'}
     %meta{:name => 'viewport', :content => 'width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=no;'}
@@ -45,5 +45,13 @@
         #heroku.footer
           Hosted on
           %a.fadein{:href => "http://heroku.com", :target => '_blank'} heroku
-    / #browser-footer
-    /   hello
+    :javascript
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-4857754-8']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
