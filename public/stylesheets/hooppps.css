@@ -55,6 +55,9 @@ input[type=text] {
 /* header
 ---------------------------------------------*/
 #header h1.hooppps {
+  margin: 0;
+}
+#header h1.hooppps a {
   text-indent: 37px;
   line-height: 45px;
   overflow: hidden;
@@ -67,6 +70,9 @@ input[type=text] {
   left: 50%;
   margin-left: -60px;
   font-size: 18px;
+  font-weight: bold;
+  
+  display: block;
   color: #2e3439;
   text-shadow: 0px 1px 1px #8d98a0;
 }
