@@ -153,6 +153,18 @@ input[type=text] {
 
 /* shot stats
 ---------------------------------------------*/
+h3.feed-name {
+  margin: 0 0 0px;
+  padding: 2px 0;
+  color: #555;
+  font-size: 0.9em;
+  text-align: center;
+  background-color: #9D9FA1;
+  border-bottom: 1px solid #989A9B;
+  font-weight: bold;
+  text-shadow: 0px 1px 1px #ddd;
+}
+
 #content ul.stats {
   margin: 10px 0;
   background: #9d9fa1;

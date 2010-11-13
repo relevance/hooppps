@@ -1,5 +1,7 @@
 #nav 
-  = link_to "popular shots", {:controller => "shots", :action => "index"}, :class => 'button popular'
+  = link_to "popular shots", {:controller => "popular", :action => "index"}, :class => 'button popular'
+  = link_to "everyone's shots", {:controller => "everyone", :action => "index"}, :class => 'button everyone'
+  = link_to "debut shots", {:controller => "debut", :action => "index"}, :class => 'button debut'
   = link_to "go to player", {:controller => "player", :action => "search"}, :class => 'button'
   %a.about{:href => '#about', :class => 'button'} About Hooppps
 = render :partial => "shared/about"

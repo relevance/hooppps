@@ -17,20 +17,20 @@ Navigation & Views:
       - Open on Index first index-page load (possibly make index?) ???
       - Accessible from any page *** @done
       - Links back to Popular Shots *** @done
-      - Links to Debut Shots *
-      - Links to Everyone Shots *
+      - Links to Debut Shots * @done
+      - Links to Everyone Shots * @done
       - Find a Player ** @done
       - About Hooppps *** @done
       
   2. Debut Shots List *
-      - Just like current index (popular shots list) *
+      - Just like current index (popular shots list) * @done
   
   3. Everyone Shot List *
-      - Just like current index (popular shots list) *
+      - Just like current index (popular shots list) * @done
       
   4. Popular Shot List (currently the index) ???
-      - Stay as index? ???
-      - Make into it's own view which is chosen by user? ???
+      - Stay as index? ??? @done
+      - Make into it's own view which is chosen by user? ??? @done
   
   5. Go to Player ** 
       - Text input that you type a dribbble username into and on submit it is appended  @done
