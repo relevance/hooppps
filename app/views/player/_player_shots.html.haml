@@ -1,12 +1,15 @@
 - @shots.each do |shot|
   %a{:href => shot_path(shot.id)}
     = image_tag shot.image_url
-  %ul.stats
-    %li.views=shot.views_count
-    %li.comments=shot.comments_count
-    %li.likes=shot.likes_count
-    %li.view
-      %a{:href => shot_path(shot.id)} view &raquo;
+  .stats-container
+    .stats-tooltip-border
+    .stats-tooltip
+    %ul.stats
+      %li.views=shot.views_count
+      %li.comments=shot.comments_count
+      %li.likes=shot.likes_count
+      %li.view
+        %a{:href => shot_path(shot.id)} view &raquo;
 - if @page == 1 && @shots.pages > 1
   = link_to raw("more shots &rsaquo;"), "/player/#{@player.username}?page=#{@page +1}", :class => 'big-pink'
 - elsif @page > 1 && @page < @shots.pages

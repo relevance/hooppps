@@ -3,5 +3,4 @@
   = link_to "everyone's shots", {:controller => "everyone", :action => "index"}, :class => 'button everyone'
   = link_to "debut shots", {:controller => "debut", :action => "index"}, :class => 'button debut'
   = link_to "go to player", {:controller => "player", :action => "search"}, :class => 'button'
-  %a.about{:href => '#about', :class => 'button'} About Hooppps
-= render :partial => "shared/about"
+  = link_to "about hooppps", {:controller => "about", :action => "index"}, :class => 'button about'

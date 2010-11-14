@@ -30,18 +30,6 @@ $(function() {
   //       $('.about').text('About Hoops');
   //     });
   //   }),
-  $('.about').click(function() {
-    $('#nav').fadeOut(400, function() {
-      $('#about').fadeIn(400);
-    });
-  });
-  
-  $('.back-to-nav').click(function(event) {
-    $('#about').fadeOut(400, function() {
-      $('#nav').fadeIn(400);
-    });
-    event.preventDefault();
-  });
   
   $('.back_button').click(function() {
     $('#nav').fadeOut(400, function() {
@@ -60,7 +48,6 @@ $(function() {
       $('.nav').text('nav');
       $('#content').fadeIn('fast');
       $('#nav').fadeOut('fast');
-      $('#about').fadeOut('fast')
     });
   });
 });

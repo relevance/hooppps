@@ -128,14 +128,13 @@ input[type=text] {
 /* about
 ---------------------------------------------*/
 #about {
-  display: none;
   padding: 10px;
 }
 
-#about a {
+#content .about-content a {
   color: #EA4C88;
 }
-#about .about-content {
+#content .about-content {
   padding: 10px;
   background: #eee;
   border: 1px solid #999;
@@ -145,7 +144,7 @@ input[type=text] {
 .copyright {
   margin-top: 10px;
 }
-#about a.big-pink {
+#content a.big-pink {
   color: #fff;
 }
 

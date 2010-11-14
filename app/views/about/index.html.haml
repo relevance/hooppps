@@ -1,0 +1,23 @@
+#content
+  .shot_meta
+    = image_tag("/apple-touch-icon-precomposed.png")
+    %h2
+      hooppps
+      %span
+        A mobile dribbble browser
+  .about-content
+    hooppps was created by 
+    %a{:href => 'http://thinkrelevance.com', :target => '_blank'} Relevance, Inc. 
+    hooppps is built on Rails and uses the 
+    %a{:href => 'http://github.com/jeremyw/swish', :target => '_blank'} swish 
+    gem. The code is hosted on 
+    %a{:href => 'http://github.com/relevance/hooppps', :target => '_blank'} github 
+    and is ready for your design/dev love. 
+    .copyright 
+      hooppps is in no way affiliated with 
+      %a{:href => 'http://dribbble.com', :target => '_blank'} dribbble
+      but is obviously a huge fan!
+  - if @current_layout == "browser"
+    %a.big-pink{:href => "http://twitter.com/hooppps", :target => "_blank"} Follow @hooppps on Twitter
+  - else
+    %a.big-pink{:href => "http://m.twitter.com/hooppps", :target => "_blank"} Follow @hooppps on Twitter

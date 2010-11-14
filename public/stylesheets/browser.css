@@ -187,8 +187,40 @@ a#twitter {
 #header a.back_button:link, #header a.back_button:visited {
   font-size: 1.3em;
 }
-#content ul.stats {
+
+#content div.stats-container {
   margin: 10px 0;
+  background: #9d9fa1;
+  border: 1px solid #989a9b;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  position: relative;
+  padding: 0;
+}
+#content div.stats-container .stats-tooltip-border {
+  border-color: transparent transparent #989a9b transparent;
+  border-style: solid;
+  border-width: 10px;
+  height:0;
+  width:0;
+  position:absolute;
+  top:-20px;
+  left:30px;
+}
+#content div.stats-container .stats-tooltip {
+  border-color: transparent transparent #9d9fa1 transparent;
+  border-style: solid;
+  border-width: 10px;
+  height:0;
+  width:0;
+  position:absolute;
+  top:-19px;
+  left:30px;
+}
+
+#content ul.stats {
+  margin: 0px 0;
   background: #9d9fa1;
   border: 1px solid #989a9b;
   -webkit-border-radius: 4px;

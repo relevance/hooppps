@@ -5,6 +5,7 @@ Hooppps::Application.routes.draw do
   resources :popular
   resources :debut
   resources :player
+  resources :about
   
   root :to => "popular#index"
 end
