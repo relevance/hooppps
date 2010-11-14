@@ -39,14 +39,14 @@ $(function() {
   });
   
   $('.nav').toggle(function() {
-    $('#content').fadeOut(400, function() {
+    $('#content, h3.feed-name').fadeOut(400, function() {
       $('.nav').text('close');
       $('#nav').fadeIn(400);
     });
   }, function() {
     $('#nav').fadeOut(400, function() {
       $('.nav').text('nav');
-      $('#content').fadeIn('fast');
+      $('#content, h3.feed-name').fadeIn('fast');
       $('#nav').fadeOut('fast');
     });
   });
