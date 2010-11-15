@@ -42,7 +42,6 @@ $(function() {
     $('#nav').animate({
       opacity: 0,
       top: '30px',
-      display: 'none',
-    }, 250);
+    }, 250).fadeOut('250');
   });
 });
