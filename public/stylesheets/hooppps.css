@@ -162,8 +162,10 @@ input[type=text] {
   background: #ebebeb;
   border: 1px solid #999;
   border-radius: 4px;
+  -moz-border-radius: 4px;
   position: relative;
   -webkit-box-shadow: 0 2px 3px #000;
+  -moz-box-shadow: 0 2px 3px #000;
   -webkit-padding-start: 0px !important;
 }
 #nav ul .tip-border {
