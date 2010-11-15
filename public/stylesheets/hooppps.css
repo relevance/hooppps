@@ -152,9 +152,82 @@ input[type=text] {
 ---------------------------------------------*/
 #nav {
   display: none;
-  margin: 10px;
-  border-radius: 4px;
+  width: 100%;
+  position: absolute;
+  top: 30px;
+  opacity: 0;
 }
+#nav ul {
+  margin: 10px;
+  background: #ebebeb;
+  border: 1px solid #999;
+  border-radius: 4px;
+  position: relative;
+  -webkit-box-shadow: 0 2px 3px #000;
+  -webkit-padding-start: 0px !important;
+}
+#nav ul .tip-border {
+  border-color: transparent transparent #ebebeb transparent;
+  border-style: solid;
+  border-width: 10px;
+  height:0;
+  width:0;
+  position:absolute;
+  top:-20px;
+  right: 10px;
+}
+
+#nav ul li {
+  list-style-type: none;
+  border-bottom: 1px solid #bbb;
+  border-top: 1px solid #fff;
+  margin: 0 20px;
+}
+#nav ul li:last-child {
+  border-bottom: none;
+}
+#nav ul li.first {
+  border-top: none;
+}
+#nav ul li a {
+  color: #EA4C88;
+  font-size: 16px;
+  font-weight: bold;
+  display: block;
+  padding: 15px 0 15px 60px;
+}
+li.popular {
+  background: url(img/icons/heart-nav.png) 10px 8px no-repeat;
+}
+li.everyone {
+  background: url(img/icons/everyone-nav.png) 9px 8px no-repeat;
+}
+li.debut {
+  background: url(img/icons/debut-nav.png) 9px 8px no-repeat;
+}
+li.go-to-player {
+  background: url(img/icons/go-to-player-nav.png) 9px 8px no-repeat;
+}
+li.about {
+  background: url(img/icons/about-nav.png) 9px 8px no-repeat;
+}
+
+/*#nav a.button {
+  padding: 5px 7px;
+  -webkit-box-shadow: 0px 1px 2px #333;
+  -moz-box-shadow: 0px 1px 2px #333;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  background: #ccc url(img/buttons/bigger-glare.png) 0 0 repeat-x;
+  font-weight: bold;
+  text-shadow: 0px 1px 2px #fff;
+  display: block;
+  font-size: 18px;
+  line-height: 50px;
+  margin-bottom: 10px;
+  color: #333;
+  text-align: center;
+}*/
 
 /* shot stats
 ---------------------------------------------*/
@@ -367,23 +440,6 @@ input[type=submit] {
   color: #fff;
   width: 100%;
   border: 0;
-}
-
-#nav a.button {
-  padding: 5px 7px;
-  -webkit-box-shadow: 0px 1px 2px #333;
-  -moz-box-shadow: 0px 1px 2px #333;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  background: #ccc url(img/buttons/bigger-glare.png) 0 0 repeat-x;
-  font-weight: bold;
-  text-shadow: 0px 1px 2px #fff;
-  display: block;
-  font-size: 18px;
-  line-height: 50px;
-  margin-bottom: 10px;
-  color: #333;
-  text-align: center;
 }
 #about a.back-to-nav {
   left: 10px;

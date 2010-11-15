@@ -1,6 +1,8 @@
 #nav 
-  = link_to "popular shots", {:controller => "popular", :action => "index"}, :class => 'button popular'
-  = link_to "everyone's shots", {:controller => "everyone", :action => "index"}, :class => 'button everyone'
-  = link_to "debut shots", {:controller => "debut", :action => "index"}, :class => 'button debut'
-  = link_to "go to player", {:controller => "player", :action => "search"}, :class => 'button'
-  = link_to "about hooppps", {:controller => "about", :action => "index"}, :class => 'button about'
+  %ul
+    .tip-border
+    %li.first.popular= link_to "popular shots", {:controller => "popular", :action => "index"}
+    %li.everyone= link_to "everyone's shots", {:controller => "everyone", :action => "index"}
+    %li.debut= link_to "debut shots", {:controller => "debut", :action => "index"}
+    %li.go-to-player= link_to "go to player", {:controller => "player", :action => "search"}
+    %li.about= link_to "about hooppps", {:controller => "about", :action => "index"}

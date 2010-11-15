@@ -29,16 +29,20 @@ $(function() {
     });
   });
   
-  $('.nav').toggle(function() {
-    $('#content, h3.feed-name').fadeOut(400, function() {
-      $('.nav').text('close');
-      $('#nav').fadeIn(400);
-    });
+  $('.nav').toggle(function() {    
+    $('.nav').text('close');
+    $('#nav').css({
+      display: 'block',
+    }).animate({
+      opacity: 1,
+      top: '45px'
+    }, 250);
   }, function() {
-    $('#nav').fadeOut(400, function() {
-      $('.nav').text('nav');
-      $('#content, h3.feed-name').fadeIn('fast');
-      $('#nav').fadeOut('fast');
-    });
+    $('.nav').text('nav');
+    $('#nav').animate({
+      opacity: 0,
+      top: '30px',
+      display: 'none',
+    }, 250);
   });
 });
