@@ -12,7 +12,7 @@ function pixels(str) {
 function newMargin(margin, delta, maxHeight) {
   maxHeight = maxHeight * -1;
   
-  margin += delta;
+  margin += delta*50
   margin = (margin > 0) ? 0 : margin;
   margin = (margin < maxHeight) ? maxHeight : margin;
   margin = margin + "px";
