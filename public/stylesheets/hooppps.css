@@ -511,6 +511,9 @@ input[type=submit] {
 #comments ul li:last-child {
   border-bottom: none;
 }
+#comments ul li a {
+  color: #EA4C88;
+}
 #comments ul li img {
   position: absolute;
   width: 30px;
@@ -535,6 +538,7 @@ input[type=submit] {
   white-space: no-wrap;
   overflow: hidden;
 }
+
 
 /* comments
 ---------------------------------------------*/
