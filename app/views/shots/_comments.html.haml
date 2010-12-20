@@ -5,7 +5,7 @@
     %li
       %img{:src => comment.player.avatar_url}
       %a.comment_player_name{:href => player_path(comment.player.username)}= comment.player.name
-      %span.comment_body= comment.body
+      %span.comment_body= raw comment.body
 
 - if @page == 1 && @comments.pages > 1
   = link_to raw("more comments &rsaquo;"), "/shots/#{@shot.id}?page=#{@page +1}", :class => 'big-pink'
