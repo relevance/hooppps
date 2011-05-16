@@ -36,6 +36,7 @@ This is a first pass. We would love your suggestions and/or contributions. Send 
 * [Shay Frendt](http://twitter.com/shayfrendt)
 * [Muness Alrubaie](http://twitter.com/muness)
 * [Jess Martin](http://twitter.com/jessmartin)
+* [Bimo Wijoyo](http://github.com/bimovidia)
 
 
 ## TODO & KNOWN ISSUES
