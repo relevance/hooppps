@@ -14,7 +14,12 @@ blockquote:before, blockquote:after, q:before, q:after { content: "";}
 blockquote, q { quotes: "" "";}
 /*browser styles
 ===========================================================*/
-
+@font-face {
+  font-family: chunk;
+  src: url(/fonts/Chunk.otf);
+  font-weight: normal;
+  font-style: normal;
+}
 body {
   background: #1a1a1a;
   color: #333;
@@ -29,39 +34,15 @@ h3 {font-size: 12px;}
   background: transparent url(../img/phones.jpg) 0 65px no-repeat;
   position: relative;
 }
-a#ribben {
-  width: 230px;
-  height: 53px;
-  -webkit-transform: rotate(45deg);
-  -moz-transform: rotate(45deg);
-  display: block;
+
+#call-to-demo {
+  width: 158px;
+  height: 121px;
+  background: transparent url(/img/demo-call-out.png) 0 0 no-repeat;
   position: absolute;
-  top: 146px;
-  left: 203px;
-  background: transparent url(../img/ribben.png) 0 0 no-repeat;
-  text-indent: -9999em;
-  overflow: hidden;
-  z-index: 1000;
+  margin: 60px 0 0 230px;
 }
-#scroll-message {
-  width: 272px;
-  text-align: center;
-  padding: 10px 0;
-  position: absolute;
-  top: 587px;
-  left: 87px;
-  z-index: 1000;
-  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#999999), to(#333333));
-  background: -moz-linear-gradient(top, #999999 0%, #333333 100%);
-  border-top: 1px solid #ccc;
-  -webkit-box-shadow: 0 -1px 3px #444;
-  -moz-box-shadow: 0 -1px 3px #444;
-  text-shadow: 0 1px 1px #888;
-  font-weight: bold;
-  font-size: 1.2em;
-  color: #333;
-  opacity: 0;
-}
+
 #frame {
   width: 272px;
   height: 410px;
@@ -78,7 +59,7 @@ a#ribben {
   overflow: hidden;
 }
 #right {
-  padding: 115px 0 0 440px;
+  padding: 55px 0 0 440px;
   width: 430px;
 }
 #heading {
@@ -86,6 +67,7 @@ a#ribben {
   background: transparent url(../img/logo.jpg) 0 0 no-repeat;
   border-bottom: 1px solid #333;
   color: #ccc;
+  margin-bottom: 20px;
 }
 #heading p a {
   text-decoration: none;
@@ -109,9 +91,11 @@ h2#notice {
 }
 p.not-just-iphones {
   font-size: 1.2em;
-  padding: 0px 0 45px 25px;
   margin-top: 10px;
   color: #ccc;
+}
+a#github, a#twitter {
+  margin-top: 20px;
 }
 a#github {
   width: 202px;
@@ -132,17 +116,26 @@ a#twitter {
   display: inline-block;
   margin-left: 7px;
 }
-#browser-about {
+.browser-about {
   background: #0c0c0c;
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
-  padding: 20px;
+  padding: 15px;
   -webkit-box-shadow: 0 1px 0 #383838;
   -moz-box-shadow: 0 1px 0 #383838;
-  margin-top: 35px;
+  margin-top: 15px;
 }
-#browser-about p {
-  font-size: 1.6em;
+
+.browser-about h2 {
+  font-family: chunk;
+  color: #bbb;
+  font-size: 18px;
+  letter-spacing: 1px;
+  margin-bottom: 5px;
+  font-smooth: always;
+}
+.browser-about p {
+  font-size: 1.4em;
   line-height: 1.4em;
   color: #b3b3b3;
 }

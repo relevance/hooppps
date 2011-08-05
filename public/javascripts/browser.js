@@ -13,13 +13,6 @@ $(document).ready(function() {
 	}, function() {
 		$(this).fadeTo("fast", .6);
 	});
-	
-	$('#frame').hover(function() {
-    $('#scroll-message').animate({opacity:1}, 300);
-  }, function() {
-    $('#scroll-message').animate({opacity:0}, 300);
-  });
-  
   
   $('#track').mousewheel(function(event, delta) {
     event.preventDefault();

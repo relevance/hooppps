@@ -10,10 +10,7 @@
 
   %body  
     #browser-content
-      %a#ribben{:href => "http://dribbble.com"} go to dribbble
-      #scroll-message 
-        / hover &amp; scroll or use &uarr;&darr; keys 
-        hover &amp scroll
+      #call-to-demo
       #frame.scrollable
         #track
           #header
@@ -31,15 +28,27 @@
             A free open-source mobile 
             %a{:href => "http://dribbble.com", :target => '_blank'} dribbble
             browser
-        %h2#notice hooppps was not meant for the browser you are currently using. Please visit on your mobile device.
-        %p.not-just-iphones **Not just for iPhones.
+        .browser-about
+          %h2 Why hooppps?
+          %p
+            Because I wanted to look at sweet dribbble shots on my phone while waiting 
+            in line at the grocery store.
+        .browser-about
+          %h2 How do you get it?
+          %p
+            You already got it! There’s nothing to download, hooppps is a webapp. Just revisit 
+            this URL on your mobile browser and bookmark this baby!
+          %p.not-just-iphones **Not just for iPhones.
+        .browser-about
+          %h2 Who made this awesomesauce?
+          %p
+            hooppps was made by 
+            %a{:href => 'http://twitter.com/parenteau', :target => '_blank'}Michael Parenteau 
+            &amp; Relevance, Inc. It’s built on Rails 3 and uses the swish gem. 
+            The code is hosted on github and is ready for your design/dev love. 
+            hooppps is in no way affiliated with dribbble but is obviously a huge fan! 
         %a#github.fadein{:href => "http://github.com/relevance/hooppps", :target => '_blank'} code on github
         %a#twitter.fadein{:href => "http://twitter.com/share?text=Check%20out%20@hooppps:%20a%20mobile%20@dribbble%20browser&url=http://hooppps.com", :target => '_blank'} share on twitter
-        #browser-about
-          %p 
-            hooppps was created by Relevance, Inc, built on Rails 3 and uses the swish gem. 
-            The code is hosted on github and is ready for your design/dev love. hooppps is in no way 
-            affiliated with dribbble but is obviously a huge fan! 
         #relevance.footer
           Created by
           %a.fadein{:href => "http://thinkrelevance.com", :target => '_blank'} relevance
