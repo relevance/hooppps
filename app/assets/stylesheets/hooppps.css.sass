@@ -1,0 +1,506 @@
+/* basic html
+ *---------------------------------------------
+
+html
+  -webkit-text-size-adjust: none
+
+body
+  background-color: #b0b0b0
+  color: #222
+  font-family: Helvetica
+  font-size: 14px
+  margin: 0
+  padding: 0
+  border: none
+
+a
+  &:link, &:visited
+    color: #fff
+    text-decoration: none
+
+h3
+  font-weight: normal
+
+input[type=text]
+  font-size: 18px
+  color: #666
+  padding: 10px
+  width: 92%
+  margin-right: 10px
+  font-weight: bold
+
+/* structure & #content specified text
+ *---------------------------------------------
+
+#header
+  border-bottom: 1px solid #8d98a0
+  height: 45px
+  background: url(img/toolbar.png) 0 0 #6d84a2 repeat-x
+  width: 100%
+
+#content
+  padding: 10px
+  img
+    max-width: 100% !important
+    display: block
+    width: auto
+    height: auto
+    margin: 0 auto
+    margin-bottom: 10px
+  h3
+    font-weight: bold
+    text-shadow: 0px 1px 1px #eee
+
+/* header
+ *---------------------------------------------
+
+#header
+  h1.hooppps
+    margin: 0
+    a
+      text-indent: 37px
+      line-height: 45px
+      overflow: hidden
+      background: transparent url(img/hooppps.png) 0 5px no-repeat
+      height: 45px
+      width: 120px
+      margin: 0
+      top: 0
+      position: absolute
+      left: 50%
+      margin-left: -60px
+      font-size: 18px
+      font-weight: bold
+      display: block
+      color: #2e3439
+      text-shadow: 0px 1px 1px #8d98a0
+  a
+    &.back_button
+      &:link, &:visited
+        left: 10px
+        top: 8px
+        padding: 5px 7px
+        position: absolute
+        -webkit-box-shadow: 0px 1px 2px #333
+        -moz-box-shadow: 0px 1px 2px #333
+        -webkit-border-radius: 4px
+        -moz-border-radius: 4px
+        background: #ea4c88 url(img/buttons/glare.png) 0 0 repeat-x
+        font-weight: bold
+        text-shadow: 0px 1px 1px #a14266
+    &.about
+      &:link, &:visited
+        right: 10px
+        top: 8px
+        padding: 5px 7px
+        position: absolute
+        -webkit-box-shadow: 0px 1px 2px #333
+        border-radius: 4px
+        background: #ea4c88 url(img/buttons/glare.png) 0 0 repeat-x
+        font-weight: bold
+        text-shadow: 0px 1px 1px #a14266
+    &.nav
+      &:link, &:visited
+        right: 10px
+        top: 8px
+        padding: 5px 7px
+        position: absolute
+        -webkit-box-shadow: 0px 1px 2px #333
+        -webkit-border-radius: 4px
+        -moz-box-shadow: 0px 1px 2px #333
+        -moz-border-radius: 4px
+        background: #ea4c88 url(img/buttons/glare.png) 0 0 repeat-x
+        font-weight: bold
+        text-shadow: 0px 1px 1px #a14266
+      &:active
+        background: #ae446e url(img/buttons/glare.png) 0 0 repeat-x
+    &.about:active, &.back_button:active
+      background: #ae446e url(img/buttons/glare.png) 0 0 repeat-x
+
+/* about
+ *---------------------------------------------
+
+#about
+  padding: 10px
+
+#content .about-content
+  a
+    color: #EA4C88
+  padding: 10px
+  background: #eee
+  border: 1px solid #999
+  -webkit-border-radius: 4px
+  -moz-border-radius: 4px
+
+.copyright
+  margin-top: 10px
+
+#content a.big-pink
+  color: #fff
+
+/* nav
+ *---------------------------------------------
+
+#nav
+  display: none
+  width: 100%
+  position: absolute
+  top: 30px
+  opacity: 0
+  ul
+    margin: 10px
+    background: #ebebeb
+    border: 1px solid #999
+    border-radius: 4px
+    -moz-border-radius: 4px
+    position: relative
+    -webkit-box-shadow: 0 2px 3px #000
+    -moz-box-shadow: 0 2px 3px #000
+    -webkit-padding-start: 0px !important
+    .tip-border
+      border-color: transparent transparent #ebebeb transparent
+      border-style: solid
+      border-width: 10px
+      height: 0
+      width: 0
+      position: absolute
+      top: -20px
+      right: 10px
+    li
+      list-style-type: none
+      border-bottom: 1px solid #bbb
+      border-top: 1px solid #fff
+      margin: 0 20px
+      &:last-child
+        border-bottom: none
+      &.first
+        border-top: none
+      a
+        color: #EA4C88
+        font-size: 16px
+        font-weight: bold
+        display: block
+        padding: 15px 0 15px 60px
+
+li
+  &.popular
+    background: url(img/icons/heart-nav.png) 10px 8px no-repeat
+  &.everyone
+    background: url(img/icons/everyone-nav.png) 9px 8px no-repeat
+  &.debut
+    background: url(img/icons/debut-nav.png) 9px 8px no-repeat
+  &.go-to-player
+    background: url(img/icons/go-to-player-nav.png) 9px 8px no-repeat
+  &.about
+    background: url(img/icons/about-nav.png) 9px 8px no-repeat
+
+/*#nav a.button {
+ *  padding: 5px 7px;
+ *  -webkit-box-shadow: 0px 1px 2px #333;
+ *  -moz-box-shadow: 0px 1px 2px #333;
+ *  -webkit-border-radius: 4px;
+ *  -moz-border-radius: 4px;
+ *  background: #ccc url(img/buttons/bigger-glare.png) 0 0 repeat-x;
+ *  font-weight: bold;
+ *  text-shadow: 0px 1px 2px #fff;
+ *  display: block;
+ *  font-size: 18px;
+ *  line-height: 50px;
+ *  margin-bottom: 10px;
+ *  color: #333;
+ *  text-align: center;
+ *}
+
+/* shot stats
+ *---------------------------------------------
+
+h3.feed-name
+  margin: 0 0 0px
+  padding: 2px 0
+  color: #555
+  font-size: 0.9em
+  text-align: center
+  background-color: #9D9FA1
+  border-bottom: 1px solid #989A9B
+  font-weight: bold
+  text-shadow: 0px 1px 1px #ddd
+
+#content
+  div.stats-container
+    margin: 10px 0
+    background: #9d9fa1
+    border: 1px solid #989a9b
+    border-radius: 4px
+    position: relative
+    padding: 8px 10px
+    .stats-tooltip-border
+      border-color: transparent transparent #989a9b transparent
+      border-style: solid
+      border-width: 10px
+      height: 0
+      width: 0
+      position: absolute
+      top: -20px
+      left: 30px
+    .stats-tooltip
+      border-color: transparent transparent #9d9fa1 transparent
+      border-style: solid
+      border-width: 10px
+      height: 0
+      width: 0
+      position: absolute
+      top: -19px
+      left: 30px
+  ul.stats
+    margin: 0
+    padding: 0
+    li
+      list-style-type: none
+      display: inline-block
+      padding-left: 30px
+      font-size: 16px
+      font-weight: bold
+      line-height: 32px
+      &.views
+        background: transparent url(img/icons/eye.png) 2px 3px no-repeat
+        border-right: 1px solid #54606a
+        padding-right: 10px
+      &.comments
+        background: transparent url(img/icons/comment.png) 5px 3px no-repeat
+        border-right: 1px solid #54606a
+        padding-left: 35px
+        padding-right: 10px
+      &.likes
+        background: transparent url(img/icons/heart.png) 2px 3px no-repeat
+        border-right: 1px solid #54606a
+        padding-right: 10px
+        &.no-view
+          border-right: none
+      &.view
+        padding: 0
+        position: absolute
+        right: 10px
+        a
+          &:link, &:visited
+            top: 8px
+            padding: 5px 7px
+            -webkit-box-shadow: 0px 1px 2px #333
+            -moz-box-shadow: 0px 1px 2px #333
+            -webkit-border-radius: 4px
+            -moz-border-radius: 4px
+            background: #666666 url(img/buttons/glare.png) 0 0 repeat-x
+            font-weight: bold
+            text-shadow: 0px 1px 1px #000
+  .shot_meta
+    min-height: 50px
+
+/* shot title & meta
+ *---------------------------------------------
+
+#about .shot_meta
+  min-height: 50px
+
+#content .shot_meta h2, #about .shot_meta h2
+  padding: 0 0 0 65px
+  color: #333
+  text-shadow: 0px 1px 1px #eee
+
+#content .shot_meta img, #about .shot_meta img
+  position: absolute
+  vertical-align: top
+  left: 10px
+  width: 50px
+  height: 50px
+  -webkit-border-radius: 5px
+  -moz-border-radius: 5px
+  -webkit-box-shadow: 0px 1px 2px #000
+
+#content .shot_meta h2 span, #about .shot_meta h2 span
+  font-weight: normal
+  font-size: 14px
+  display: block
+
+#content .shot_meta h2 span a
+  &:link, &:visited
+    color: #EA4C88
+    font-weight: bold
+
+/* Button styles
+ *---------------------------------------------
+
+a
+  &.big-pink
+    &:link, &:visited
+      display: block
+      padding: 10px 0
+      -webkit-box-shadow: 0px 1px 2px #333
+      -webkit-border-radius: 4px
+      -moz-border-radius: 4px
+      background: #ea4c88 url(img/buttons/big-glare.png) 0 0 repeat-x
+      font-weight: bold
+      font-size: 16px
+      text-shadow: 0px 1px 1px #a14266
+      margin: 10px 0
+      text-align: center
+    &:active
+      background: #ae446e url(img/buttons/big-glare.png) 0 0 repeat-x
+  &.big-pink-half:active, &.big-pink-third:active, &.big-pink-quarter:active
+    background: #ae446e url(img/buttons/big-glare.png) 0 0 repeat-x
+  &.big-pink-half
+    &:link, &:visited
+      display: inline-block
+      padding: 10px 0
+      -webkit-box-shadow: 0px 1px 2px #333
+      -webkit-border-radius: 4px
+      -moz-border-radius: 4px
+      background: #ea4c88 url(img/buttons/big-glare.png) 0 0 repeat-x
+      font-weight: bold
+      font-size: 16px
+      text-shadow: 0px 1px 1px #a14266
+      margin: 10px 0
+      text-align: center
+      width: 49%
+  &.big-pink-third
+    &:link, &:visited
+      display: inline-block
+      padding: 10px 0
+      -webkit-box-shadow: 0px 1px 2px #333
+      -moz-box-shadow: 0px 1px 2px #333
+      -moz-border-radius: 4px
+      -webkit-border-radius: 4px
+      background: #ea4c88 url(img/buttons/big-glare.png) 0 0 repeat-x
+      font-weight: bold
+      font-size: 12px
+      text-shadow: 0px 1px 1px #a14266
+      margin: 10px 0
+      text-align: center
+      width: 32.5%
+  &.big-pink-quarter
+    &:link, &:visited
+      display: inline-block
+      padding: 10px 0
+      -webkit-box-shadow: 0px 1px 2px #333
+      border-radius: 4px
+      background: #ea4c88 url(img/buttons/big-glare.png) 0 0 repeat-x
+      font-weight: bold
+      font-size: 12px
+      text-shadow: 0px 1px 1px #a14266
+      margin: 10px 0
+      text-align: center
+      width: 24%
+
+input[type=submit]
+  display: block
+  padding: 10px 0
+  -webkit-box-shadow: 0px 1px 2px #333
+  -moz-box-shadow: 0px 1px 2px #333
+  -webkit-border-radius: 4px
+  -moz-border-radius: 4px
+  background: #ea4c88 url(img/buttons/big-glare.png) 0 0 repeat-x
+  font-weight: bold
+  font-size: 16px
+  text-shadow: 0px 1px 1px #a14266
+  margin: 10px 0
+  text-align: center
+  color: #fff
+  width: 100%
+  border: 0
+
+#about a.back-to-nav
+  left: 10px
+  top: 8px
+  padding: 5px 7px
+  position: absolute
+  -webkit-box-shadow: 0px 1px 2px #333
+  -webkit-border-radius: 4px
+  -moz-box-shadow: 0px 1px 2px #333
+  -moz-border-radius: 4px
+  background: #ea4c88 url(img/buttons/glare.png) 0 0 repeat-x
+  font-weight: bold
+  text-shadow: 0px 1px 1px #a14266
+  color: #fff
+
+/* player stats
+ *---------------------------------------------
+
+#content ul.player_stats
+  margin: 10px 0
+  background: #9d9fa1
+  border: 1px solid #989a9b
+  border-radius: 4px
+  padding: 10px
+  position: relative
+  li
+    list-style-type: none
+    display: inline-block
+    font-size: 10px
+    font-weight: bold
+    line-height: px
+    text-align: center
+    width: 23%
+    border-right: 1px solid #666
+    &:last-child
+      border: none
+    span
+      display: block
+      font-size: 24px
+      text-shadow: 0px 1px 1px #ccc
+
+/* comments
+ *---------------------------------------------
+
+#comments
+  ul
+    margin: 0
+    -webkit-padding-start: 0
+    background: #ebebeb
+    border: 1px solid #989a9b
+    border-radius: 4px
+    li
+      list-style-type: none
+      padding: 10px
+      border-top: #fff 1px solid
+      border-bottom: #bbb 1px solid
+      min-height: 30px
+      &:first-child
+        border-top: none
+      &:last-child
+        border-bottom: none
+      a
+        color: #EA4C88
+      img
+        position: absolute
+        width: 30px
+        height: 30px
+        border-radius: 4px
+        -webkit-box-shadow: 0px 1px 2px #000
+  a.comment_player_name
+    &:link, &:visited
+      color: #EA4C88
+      font-weight: bold
+      display: block
+      margin-left: 40px
+      font-size: 12px
+  span.comment_body
+    display: block
+    margin-left: 40px
+    margin-top: 5px
+    font-size: 10px
+    -webkit-text-overflow: ellipsis
+    white-space: no-wrap
+    overflow: hidden
+
+/* comments
+ *---------------------------------------------
+
+.error-page
+  h2
+    font-size: 18px
+    font-weight: bold
+  p
+    font-size: 12px
+    margin: 5px 0
+  text-align: center
+  background: #ebebeb url(img/airball.png) center 70px no-repeat
+  height: 235px
+  margin: 10px

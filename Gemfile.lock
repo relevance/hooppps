@@ -44,8 +44,14 @@ GEM
     arel (2.2.1)
     bcrypt-ruby (3.0.0)
     builder (3.0.0)
+    coffee-script (2.2.0)
+      coffee-script-source
+      execjs
+    coffee-script-source (1.1.2)
     crack (0.1.8)
     erubis (2.7.0)
+    execjs (1.2.4)
+      multi_json (~> 1.0)
     haml (3.1.2)
     hike (1.2.1)
     httparty (0.6.1)
@@ -101,6 +107,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  coffee-script
   haml (= 3.1.2)
   rails (>= 3.1)
   swish!

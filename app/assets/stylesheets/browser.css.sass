@@ -1,0 +1,337 @@
+//= require hooppps
+
+/*reset
+ *===========================================================
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td
+  margin: 0
+  padding: 0
+  border: 0
+  outline: 0
+  font-weight: inherit
+  font-style: inherit
+  font-size: 100%
+  font-family: inherit
+  vertical-align: baseline
+
+/* remember to define focus styles!
+
+\:focus
+  outline: 0
+
+body
+  line-height: 1
+  color: black
+  background: white
+
+ol, ul
+  list-style: none
+
+/* tables still need 'cellspacing="0"' in the markup
+
+table
+  border-collapse: separate
+  border-spacing: 0
+
+caption, th, td
+  text-align: left
+  font-weight: normal
+
+blockquote
+  &:before, &:after
+    content: ""
+
+q
+  &:before, &:after
+    content: ""
+
+blockquote, q
+  quotes: "" ""
+
+/*browser styles
+ *===========================================================
+@font-face
+  font-family: chunk
+  src: url(/fonts/Chunk.otf)
+  font-weight: normal
+  font-style: normal
+
+
+body
+  background: #1a1a1a
+  color: #333
+  font-family: "helvetica neue", helvetica, arial, sans-serif
+  font-size: 62.7%
+
+h3
+  font-size: 12px
+
+#browser-content
+  width: 960px
+  margin: 0 auto
+  height: 833px
+  background: transparent url(../img/phones.jpg) 0 65px no-repeat
+  position: relative
+
+#call-to-demo
+  width: 158px
+  height: 121px
+  background: transparent url(/img/demo-call-out.png) 0 0 no-repeat
+  position: absolute
+  margin: 60px 0 0 230px
+
+#frame
+  width: 272px
+  height: 410px
+  position: absolute
+  top: 210px
+  left: 87px
+  background-color: #b0b0b0
+  overflow: hidden
+
+#track
+  width: 272px
+  height: 10000px
+  position: absolute
+  overflow: hidden
+
+#right
+  padding: 55px 0 0 440px
+  width: 430px
+
+#heading
+  height: 100px
+  background: transparent url(../img/logo.jpg) 0 0 no-repeat
+  border-bottom: 1px solid #333
+  color: #ccc
+  margin-bottom: 20px
+  p a
+    text-decoration: none
+    color: #ea4c88
+    font-weight: bold
+  h1
+    display: none
+  p
+    padding: 50px 0 0 88px
+    font-size: 1.7em
+
+h2#notice
+  font-size: 2.35em
+  line-height: 1.2em
+  padding: 35px 0 0 25px
+  border-top: 1px solid #000
+  color: #bbb
+  margin-bottom: 0
+
+p.not-just-iphones
+  font-size: 1.2em
+  margin-top: 10px
+  color: #ccc
+
+a
+  &#github, &#twitter
+    margin-top: 20px
+  &#github
+    width: 202px
+    height: 63px
+    text-indent: -9999em
+    overflow: hidden
+    opacity: .8
+    background: transparent url(../img/github-button.png) 0 0 no-repeat
+    display: inline-block
+  &#twitter
+    width: 218px
+    height: 63px
+    text-indent: -9999em
+    overflow: hidden
+    opacity: .8
+    background: transparent url(../img/twitter-button.png) 0 0 no-repeat
+    display: inline-block
+    margin-left: 7px
+
+.browser-about
+  background: #0c0c0c
+  -webkit-border-radius: 20px
+  -moz-border-radius: 20px
+  padding: 15px
+  -webkit-box-shadow: 0 1px 0 #383838
+  -moz-box-shadow: 0 1px 0 #383838
+  margin-top: 15px
+  h2
+    font-family: chunk
+    color: #bbb
+    font-size: 18px
+    letter-spacing: 1px
+    margin-bottom: 5px
+    font-smooth: always
+  p
+    font-size: 1.4em
+    line-height: 1.4em
+    color: #b3b3b3
+
+.footer
+  font-size: 1.6em
+  color: #616161
+  font-weight: normal
+  display: inline-block
+  margin-top: 40px
+  height: 77px
+  a
+    margin-top: 5px
+    display: block
+    text-indent: -9999em
+    overflow: hidden
+    opacity: .6
+    height: 55px
+
+#heroku a
+  width: 160px
+  background: transparent url(../img/heroku.png) 0 0 no-repeat
+
+#relevance
+  margin-left: 5px
+
+#heroku
+  margin-left: 50px
+
+#relevance a
+  width: 203px
+  background: transparent url(../img/relevance.png) 0 0 no-repeat
+
+#browser-footer
+  width: 960px
+  margin: 0 auto
+  color: #fff
+
+/*hooppps for browser frame fixes
+ *================================================================
+
+#header a
+  &.nav
+    &:link, &:visited
+      font-size: 1.3em
+  &.back_button
+    &:link, &:visited
+      font-size: 1.3em
+
+#content
+  div.stats-container
+    margin: 10px 0
+    background: #9d9fa1
+    border: 1px solid #989a9b
+    -webkit-border-radius: 4px
+    -moz-border-radius: 4px
+    border-radius: 4px
+    position: relative
+    padding: 0
+    .stats-tooltip-border
+      border-color: transparent transparent #989a9b transparent
+      border-style: solid
+      border-width: 10px
+      height: 0
+      width: 0
+      position: absolute
+      top: -20px
+      left: 30px
+    .stats-tooltip
+      border-color: transparent transparent #9d9fa1 transparent
+      border-style: solid
+      border-width: 10px
+      height: 0
+      width: 0
+      position: absolute
+      top: -19px
+      left: 30px
+  ul.stats
+    margin: 0px 0
+    background: #9d9fa1
+    border: 1px solid #989a9b
+    -webkit-border-radius: 4px
+    -moz-border-radius: 4px
+    padding: 5px
+    position: relative
+    li
+      list-style-type: none
+      display: inline-block
+      padding-left: 25px
+      font-size: 12px
+      font-weight: bold
+      line-height: 32px
+      color: #333
+      &.views
+        background: transparent url(../img/eye.png) 2px 6px no-repeat
+        border-right: 1px solid #54606a
+        padding-right: 10px
+      &.comments
+        background: transparent url(../img/comment.png) 5px 6px no-repeat
+        border-right: 1px solid #54606a
+        padding-left: 30px
+        padding-right: 10px
+      &.likes
+        background: transparent url(../img/heart.png) 2px 6px no-repeat
+        border-right: 1px solid #54606a
+        padding-right: 10px
+      &.view a
+        &:link, &:visited
+          top: 8px
+          padding: 5px 7px
+          -webkit-box-shadow: 0px 1px 2px #333
+          -webkit-border-radius: 4px
+          -moz-border-radius: 4px
+          background: #666666 url(img/buttons/glare.png) 0 0 repeat-x
+          font-weight: bold
+          text-shadow: 0px 1px 1px #000
+          font-size: 12px
+
+#about a.back-to-nav
+  font-size: 12px
+
+#content .shot_meta, #about .shot_meta
+  margin-bottom: 10px
+
+#content .shot_meta h2
+  font-size: 18px
+  padding-top: 5px
+  font-weight: bold
+  text-shadow: none
+  color: #444
+
+#about
+  .shot_meta h2
+    font-size: 18px
+    padding-top: 5px
+    font-weight: bold
+    text-shadow: none
+    color: #444
+    padding-top: 10px
+  .about-content
+    font-size: 12px
+    line-height: 1.4em
+
+#content
+  .shot_meta h2 span a
+    &:link, &:visited
+      color: #ec4383
+  h3
+    margin-bottom: 10px
+
+.copyright
+  margin-top: 10px
+
+a
+  &.big-pink-third
+    &:link, &:visited
+      font-size: 11px
+  &.big-pink-half
+    &:link, &:visited
+      font-size: 11px
+
+/*Firefox position fixes
+ *================================================================
+
+@-moz-document url-prefix()
+  ul.stats li.view
+    padding: 0
+    position: absolute
+    right: 10px
+    top: 5px
