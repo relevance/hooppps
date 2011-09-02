@@ -1,8 +1,11 @@
+class RecordNotFound < Exception
+end
+
 class ApplicationController < ActionController::Base
   protect_from_forgery
   layout :detect_browser
 
-  rescue_from ActionController::RoutingError, ActiveRecord::RecordNotFound, :with => :render_not_found
+  rescue_from ActionController::RoutingError, RecordNotFound, :with => :render_not_found
     
   protected
       
