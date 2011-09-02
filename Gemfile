@@ -1,6 +1,6 @@
 source 'http://rubygems.org'
 
-gem 'rails', '>= 3.1'
+gem 'rails', :git => "git://github.com/rails/rails.git"
 gem 'swish', :git => "git://github.com/michaelparenteau/swish.git", :branch => "ruby-1.9.2"
 gem 'haml', '3.1.2'
 
