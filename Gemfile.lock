@@ -107,7 +107,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  coffee-script
+  coffee-script (= 2.2.0)
   haml (= 3.1.2)
   rails (>= 3.1)
   swish!
