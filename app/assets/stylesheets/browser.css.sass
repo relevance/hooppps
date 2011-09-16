@@ -1,9 +1,6 @@
 //= require hooppps
-
-$dribbble-pink: #ea4c88
-
-@import "mixins"
-@import "reset" 
+@import "partials/mixins"
+@import "partials/reset" 
 
 /*browser styles
  *===========================================================
@@ -36,9 +33,7 @@ h3
 
 #frame
   +width-height(272px,410px)
-  position: absolute
-  top: 210px
-  left: 87px
+  +absolute-top-left(210px,87px)
   background-color: #b0b0b0
   overflow: hidden
 
@@ -62,7 +57,7 @@ h3
     font-size: 1.7em
     a
       text-decoration: none
-      color: $dribbble-pink
+      color: #ea4c88
       font-weight: bold
   h1
     display: none
@@ -105,19 +100,15 @@ a
   display: inline-block
   margin: 40px 20px 0 0
   a
+    +image-replacement(block,160px,55px)
     margin-top: 5px
-    display: block
-    text-indent: -9999em
-    overflow: hidden
     opacity: .6
-    height: 55px
     &#heroku
-      width: 160px
       background: transparent url(../img/heroku.png) 0 0 no-repeat
     &#relevance
-      width: 203px
       background: transparent url(../img/relevance.png) 0 0 no-repeat
-
+      width: 203px
+      
 /*hooppps for browser frame fixes
  *================================================================
 
@@ -175,12 +166,9 @@ a
         padding-right: 10px
       &.view a
         &:link, &:visited
-          +border-radius(4px)
-          +box-shadow(0px 1px 2px #333)
+          +half-gloss-button(#666, 4px)
           top: 8px
           padding: 5px 7px
-          background: #666666 url(img/buttons/glare.png) 0 0 repeat-x
-          font-weight: bold
           text-shadow: 0px 1px 1px #000
           font-size: 12px
 
@@ -232,7 +220,5 @@ a
 
 @-moz-document url-prefix()
   ul.stats li.view
+    +absolute-top-right(5px,10px)
     padding: 0
-    position: absolute
-    right: 10px
-    top: 5px

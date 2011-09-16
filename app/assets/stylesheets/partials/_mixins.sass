@@ -1,0 +1,60 @@
+=absolute-top-left($top, $left)
+  position: absolute
+  top: $top
+  left: $left
+
+=absolute-top-right($top, $right)
+  position: absolute
+  top: $top
+  right: $right
+
+=width-height($width,$height)
+  width: #{$width}
+  height: #{$height}
+
+=image-replacement($display,$width,$height)
+  +width-height(#{$width},#{$height})
+  display: #{$display}
+  text-indent: -9999em
+  overflow: hidden
+  
+=border-radius($radii)
+  -webkit-border-radius: #{$radii}
+  -moz-border-radius: #{$radii}
+  -ms-border-radius: #{$radii}
+  border-radius: #{$radii}
+
+=box-shadow($values)
+  -webkit-box-shadow: #{$values}
+  -moz-box-shadow: #{$values}
+  -o-box-shadow: #{$values}
+  -ms-box-shadow: #{$values}
+  box-shadow: #{$values}
+
+=tool-tip-triangle($direction,$color,$size)
+  +width-height(0,0)
+  @if $direction == "down"
+    border-color: #{$color} transparent transparent transparent
+  @if $direction == "left"
+    border-color: transparent #{$color} transparent transparent
+  @if $direction == "up"
+    border-color: transparent transparent #{$color} transparent
+  @if $direction == "right"
+    border-color: transparent #{$color} transparent #{$color}
+  border-width: #{$size}
+  border-style: solid
+  position: absolute
+  display: block
+
+=half-gloss-button($color, $radii)
+  +box-shadow("0px 1px 2px #333, inset 0 1px 0 rgba(255,255,255, .6)")
+  background: $color
+  background: -moz-linear-gradient(top, lighten($color, 9) 0%, lighten($color, 9) 51%, $color 51%, $color 100%)
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,lighten($color, 9)), color-stop(51%,lighten($color, 9)), color-stop(51%,$color), color-stop(100%,$color))
+  background: -webkit-linear-gradient(top, lighten($color, 9) 0%,lighten($color, 9) 51%,$color 51%,$color 100%)
+  background: -o-linear-gradient(top, lighten($color, 9) 0%,lighten($color, 9) 51%,$color 51%,$color 100%)
+  background: -ms-linear-gradient(top, lighten($color, 9) 0%,lighten($color, 9) 51%,$color 51%,$color 100%)
+  background: linear-gradient(top, lighten($color, 9) 0%,lighten($color, 9) 51%,$color 51%,$color 100%)
+  -webkit-border-radius: #{$radii}
+  -moz-border-radius: #{$radii}
+  font-weight: bold

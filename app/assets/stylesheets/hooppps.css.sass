@@ -1,3 +1,5 @@
+@import "partials/mixins"
+
 /* basic html
  *---------------------------------------------
 
@@ -33,18 +35,15 @@ input[type=text]
  *---------------------------------------------
 
 #header
+  +width-height(100%, 45px)
   border-bottom: 1px solid #8d98a0
-  height: 45px
   background: url(img/toolbar.png) 0 0 #6d84a2 repeat-x
-  width: 100%
 
 #content
   padding: 10px
   img
     max-width: 100% !important
     display: block
-    width: auto
-    height: auto
     margin: 0 auto
     margin-bottom: 10px
   h3
@@ -58,17 +57,13 @@ input[type=text]
   h1.hooppps
     margin: 0
     a
+      +width-height(120px,45px)
+      +absolute-top-left(0, 50%)
       text-indent: 37px
       line-height: 45px
       overflow: hidden
       background: transparent url(img/hooppps.png) 0 5px no-repeat
-      height: 45px
-      width: 120px
-      margin: 0
-      top: 0
-      position: absolute
-      left: 50%
-      margin-left: -60px
+      margin: 0 0 0 -60px
       font-size: 18px
       font-weight: bold
       display: block
@@ -77,45 +72,18 @@ input[type=text]
   a
     &.back_button
       &:link, &:visited
-        left: 10px
-        top: 8px
+        +half-gloss-button(#ea4c88, 4px)
+        +absolute-top-left(8px, 10px)
         padding: 5px 7px
-        position: absolute
-        -webkit-box-shadow: 0px 1px 2px #333
-        -moz-box-shadow: 0px 1px 2px #333
-        -webkit-border-radius: 4px
-        -moz-border-radius: 4px
-        background: #ea4c88 url(img/buttons/glare.png) 0 0 repeat-x
-        font-weight: bold
-        text-shadow: 0px 1px 1px #a14266
-    &.about
-      &:link, &:visited
-        right: 10px
-        top: 8px
-        padding: 5px 7px
-        position: absolute
-        -webkit-box-shadow: 0px 1px 2px #333
-        border-radius: 4px
-        background: #ea4c88 url(img/buttons/glare.png) 0 0 repeat-x
-        font-weight: bold
         text-shadow: 0px 1px 1px #a14266
     &.nav
       &:link, &:visited
-        right: 10px
-        top: 8px
+        +half-gloss-button(#ea4c88, 4px)
+        +absolute-top-right(8px, 10px)
         padding: 5px 7px
-        position: absolute
-        -webkit-box-shadow: 0px 1px 2px #333
-        -webkit-border-radius: 4px
-        -moz-box-shadow: 0px 1px 2px #333
-        -moz-border-radius: 4px
-        background: #ea4c88 url(img/buttons/glare.png) 0 0 repeat-x
-        font-weight: bold
         text-shadow: 0px 1px 1px #a14266
-      &:active
-        background: #ae446e url(img/buttons/glare.png) 0 0 repeat-x
-    &.about:active, &.back_button:active
-      background: #ae446e url(img/buttons/glare.png) 0 0 repeat-x
+        &:active
+          +half-gloss-button(darken(#ea4c88, 5%), 4px)
 
 /* about
  *---------------------------------------------
@@ -124,13 +92,12 @@ input[type=text]
   padding: 10px
 
 #content .about-content
-  a
-    color: #EA4C88
+  +border-radius(4px)
   padding: 10px
   background: #eee
   border: 1px solid #999
-  -webkit-border-radius: 4px
-  -moz-border-radius: 4px
+  a
+    color: #EA4C88
 
 .copyright
   margin-top: 10px
@@ -148,24 +115,16 @@ input[type=text]
   top: 30px
   opacity: 0
   ul
+    +border-radius(4px)
+    +box-shadow("0 2px 3px #000")
     margin: 10px
     background: #ebebeb
     border: 1px solid #999
-    border-radius: 4px
-    -moz-border-radius: 4px
     position: relative
-    -webkit-box-shadow: 0 2px 3px #000
-    -moz-box-shadow: 0 2px 3px #000
     -webkit-padding-start: 0px !important
     .tip-border
-      border-color: transparent transparent #ebebeb transparent
-      border-style: solid
-      border-width: 10px
-      height: 0
-      width: 0
-      position: absolute
-      top: -20px
-      right: 10px
+      +tool-tip-triangle(up,#ebebeb,10px)
+      +absolute-top-right(-20px,10px)
     li
       list-style-type: none
       border-bottom: 1px solid #bbb
@@ -194,23 +153,6 @@ li
   &.about
     background: url(img/icons/about-nav.png) 9px 8px no-repeat
 
-/*#nav a.button {
- *  padding: 5px 7px;
- *  -webkit-box-shadow: 0px 1px 2px #333;
- *  -moz-box-shadow: 0px 1px 2px #333;
- *  -webkit-border-radius: 4px;
- *  -moz-border-radius: 4px;
- *  background: #ccc url(img/buttons/bigger-glare.png) 0 0 repeat-x;
- *  font-weight: bold;
- *  text-shadow: 0px 1px 2px #fff;
- *  display: block;
- *  font-size: 18px;
- *  line-height: 50px;
- *  margin-bottom: 10px;
- *  color: #333;
- *  text-align: center;
- *}
-
 /* shot stats
  *---------------------------------------------
 
@@ -227,30 +169,18 @@ h3.feed-name
 
 #content
   div.stats-container
+    +border-radius(4px)
     margin: 10px 0
     background: #9d9fa1
     border: 1px solid #989a9b
-    border-radius: 4px
     position: relative
     padding: 8px 10px
     .stats-tooltip-border
-      border-color: transparent transparent #989a9b transparent
-      border-style: solid
-      border-width: 10px
-      height: 0
-      width: 0
-      position: absolute
-      top: -20px
-      left: 30px
+      +tool-tip-triangle(up,#989a9b,10px)
+      +absolute-top-left(-20px,30px)
     .stats-tooltip
-      border-color: transparent transparent #9d9fa1 transparent
-      border-style: solid
-      border-width: 10px
-      height: 0
-      width: 0
-      position: absolute
-      top: -19px
-      left: 30px
+      +tool-tip-triangle(up,#9d9fa1,10px)
+      +absolute-top-left(-19px,30px)
   ul.stats
     margin: 0
     padding: 0
@@ -261,35 +191,27 @@ h3.feed-name
       font-size: 16px
       font-weight: bold
       line-height: 32px
+      border-right: 1px solid #54606a
+      &:last-child
+        border: none
       &.views
         background: transparent url(img/icons/eye.png) 2px 3px no-repeat
-        border-right: 1px solid #54606a
         padding-right: 10px
       &.comments
         background: transparent url(img/icons/comment.png) 5px 3px no-repeat
-        border-right: 1px solid #54606a
-        padding-left: 35px
-        padding-right: 10px
+        padding: 0 10px 0 35px
       &.likes
         background: transparent url(img/icons/heart.png) 2px 3px no-repeat
-        border-right: 1px solid #54606a
         padding-right: 10px
-        &.no-view
-          border-right: none
       &.view
         padding: 0
         position: absolute
         right: 10px
         a
           &:link, &:visited
+            +half-gloss-button(#666, 4px)
             top: 8px
             padding: 5px 7px
-            -webkit-box-shadow: 0px 1px 2px #333
-            -moz-box-shadow: 0px 1px 2px #333
-            -webkit-border-radius: 4px
-            -moz-border-radius: 4px
-            background: #666666 url(img/buttons/glare.png) 0 0 repeat-x
-            font-weight: bold
             text-shadow: 0px 1px 1px #000
   .shot_meta
     min-height: 50px
@@ -306,14 +228,12 @@ h3.feed-name
   text-shadow: 0px 1px 1px #eee
 
 #content .shot_meta img, #about .shot_meta img
+  +border-radius(5px)
+  +width-height(50px, 50px)
+  +box-shadow("0px 1px 2px #000")
   position: absolute
   vertical-align: top
   left: 10px
-  width: 50px
-  height: 50px
-  -webkit-border-radius: 5px
-  -moz-border-radius: 5px
-  -webkit-box-shadow: 0px 1px 2px #000
 
 #content .shot_meta h2 span, #about .shot_meta h2 span
   font-weight: normal
@@ -324,6 +244,9 @@ h3.feed-name
   &:link, &:visited
     color: #EA4C88
     font-weight: bold
+    -webkit-text-overflow: ellipsis
+    white-space: no-wrap
+    overflow: hidden
 
 /* Button styles
  *---------------------------------------------
@@ -331,30 +254,22 @@ h3.feed-name
 a
   &.big-pink
     &:link, &:visited
+      +half-gloss-button(#ea4c88, 4px)
       display: block
       padding: 10px 0
-      -webkit-box-shadow: 0px 1px 2px #333
-      -webkit-border-radius: 4px
-      -moz-border-radius: 4px
-      background: #ea4c88 url(img/buttons/big-glare.png) 0 0 repeat-x
-      font-weight: bold
       font-size: 16px
       text-shadow: 0px 1px 1px #a14266
       margin: 10px 0
       text-align: center
     &:active
-      background: #ae446e url(img/buttons/big-glare.png) 0 0 repeat-x
+      +half-gloss-button(darken(#ea4c88, 5%), 4px)
   &.big-pink-half:active, &.big-pink-third:active, &.big-pink-quarter:active
-    background: #ae446e url(img/buttons/big-glare.png) 0 0 repeat-x
+    +half-gloss-button(darken(#ea4c88, 5%), 4px)
   &.big-pink-half
     &:link, &:visited
+      +half-gloss-button(#ea4c88, 4px)
       display: inline-block
       padding: 10px 0
-      -webkit-box-shadow: 0px 1px 2px #333
-      -webkit-border-radius: 4px
-      -moz-border-radius: 4px
-      background: #ea4c88 url(img/buttons/big-glare.png) 0 0 repeat-x
-      font-weight: bold
       font-size: 16px
       text-shadow: 0px 1px 1px #a14266
       margin: 10px 0
@@ -362,14 +277,9 @@ a
       width: 49%
   &.big-pink-third
     &:link, &:visited
+      +half-gloss-button(#ea4c88, 4px)
       display: inline-block
       padding: 10px 0
-      -webkit-box-shadow: 0px 1px 2px #333
-      -moz-box-shadow: 0px 1px 2px #333
-      -moz-border-radius: 4px
-      -webkit-border-radius: 4px
-      background: #ea4c88 url(img/buttons/big-glare.png) 0 0 repeat-x
-      font-weight: bold
       font-size: 12px
       text-shadow: 0px 1px 1px #a14266
       margin: 10px 0
@@ -377,12 +287,9 @@ a
       width: 32.5%
   &.big-pink-quarter
     &:link, &:visited
+      +half-gloss-button(#ea4c88, 4px)
       display: inline-block
       padding: 10px 0
-      -webkit-box-shadow: 0px 1px 2px #333
-      border-radius: 4px
-      background: #ea4c88 url(img/buttons/big-glare.png) 0 0 repeat-x
-      font-weight: bold
       font-size: 12px
       text-shadow: 0px 1px 1px #a14266
       margin: 10px 0
@@ -390,14 +297,9 @@ a
       width: 24%
 
 input[type=submit]
+  +half-gloss-button(#ea4c88, 4px)
   display: block
   padding: 10px 0
-  -webkit-box-shadow: 0px 1px 2px #333
-  -moz-box-shadow: 0px 1px 2px #333
-  -webkit-border-radius: 4px
-  -moz-border-radius: 4px
-  background: #ea4c88 url(img/buttons/big-glare.png) 0 0 repeat-x
-  font-weight: bold
   font-size: 16px
   text-shadow: 0px 1px 1px #a14266
   margin: 10px 0
@@ -407,16 +309,9 @@ input[type=submit]
   border: 0
 
 #about a.back-to-nav
-  left: 10px
-  top: 8px
+  +half-gloss-button(#ea4c88, 4px)
+  +absolute-top-left(8px, 10px)
   padding: 5px 7px
-  position: absolute
-  -webkit-box-shadow: 0px 1px 2px #333
-  -webkit-border-radius: 4px
-  -moz-box-shadow: 0px 1px 2px #333
-  -moz-border-radius: 4px
-  background: #ea4c88 url(img/buttons/glare.png) 0 0 repeat-x
-  font-weight: bold
   text-shadow: 0px 1px 1px #a14266
   color: #fff
 
@@ -424,10 +319,10 @@ input[type=submit]
  *---------------------------------------------
 
 #content ul.player_stats
+  +border-radius(4px)
   margin: 10px 0
   background: #9d9fa1
   border: 1px solid #989a9b
-  border-radius: 4px
   padding: 10px
   position: relative
   li
@@ -435,7 +330,6 @@ input[type=submit]
     display: inline-block
     font-size: 10px
     font-weight: bold
-    line-height: px
     text-align: center
     width: 23%
     border-right: 1px solid #666
@@ -451,11 +345,11 @@ input[type=submit]
 
 #comments
   ul
+    +border-radius(4px)
     margin: 0
     -webkit-padding-start: 0
     background: #ebebeb
     border: 1px solid #989a9b
-    border-radius: 4px
     li
       list-style-type: none
       padding: 10px
@@ -469,11 +363,10 @@ input[type=submit]
       a
         color: #EA4C88
       img
+        +width-height(30px,30px)
+        +border-radius(4px)
+        +box-shadow("0px 1px 2px #000")
         position: absolute
-        width: 30px
-        height: 30px
-        border-radius: 4px
-        -webkit-box-shadow: 0px 1px 2px #000
   a.comment_player_name
     &:link, &:visited
       color: #EA4C88
