@@ -2,16 +2,16 @@
   .shot_meta
     =image_tag @player.avatar_url
 
-    - if @player.name == nil
+    - if @player.name.present?
       %h2
-        = @player.username
+        = @player.name
         %span
           = @player.location
           %br
           %a{:href => @player.website_url , :target => '_blank'}=@player.website_url
     - else
       %h2
-        = @player.name
+        = @player.username
         %span
           = @player.location
           %br

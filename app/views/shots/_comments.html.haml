@@ -4,7 +4,10 @@
   - comments.each do |comment|
     %li
       %img{:src => comment.player.avatar_url}
-      %a.comment_player_name{:href => player_path(comment.player.username)}= comment.player.name
+      -if comment.player.name.present?
+        %a.comment_player_name{:href => player_path(comment.player.username)}= comment.player.name
+      -else
+        %a.comment_player_name{:href => player_path(comment.player.username)}= comment.player.username
       %span.comment_body= raw comment.body
 
 - if @page == 1 && @comments.pages > 1
