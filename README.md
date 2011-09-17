@@ -4,13 +4,14 @@
 
 Hooppps is a mobile-friendly [dribbble](http://dribbble.com) browser. Why? Well, we love dribbble and we all have iPhones, Androids, and other smart-phones, but dribbble does not have a mobile stylesheet. When the dribbble API came out, some iPhone apps hit the app store but that didn't service everybody and they cost money for a limited version of dribbble. We just wanted to browse shots and players!
 
-Hooppps is built on Rails 3 and uses the [Swish](http://github.com/jeremyw/swish) gem to use the dribbble API. 
+Hooppps is built on Rails 3.1 and uses the [Swish](http://github.com/jeremyw/swish) gem to use the dribbble API. 
 
 ## FEATURES
 
 * Popular Shot landing page (lists shots and some data about the shot)
+* Everyone and Debut shots pages (via top nav)
 * Link to shot page
-* Tweet Shot (needs improvement)
+* Share shot on twitter
 * List comments and link to players' pages
 * Link to player page (lists player's shots and player and data about player/shots)
 * Follow player on twitter
@@ -37,23 +38,25 @@ This is a first pass. We would love your suggestions and/or contributions. Send 
 * [Muness Alrubaie](http://twitter.com/muness)
 * [Jess Martin](http://twitter.com/jessmartin)
 * [Bimo Wijoyo](http://github.com/bimovidia)
+* [Vojto Rinik](http://twitter.com/_vojto)
 
 
 ## TODO & KNOWN ISSUES
 
-* More views other than the "popular shots" stream. (eg: everyone / debuts shots)
 * Behavioral details? (note: don't bog the project down with making views huge and giant plugins)
 * Stay on top of API changes / additions
 
 ## TO RUN PROJECT IN DEV MODE
 
-1. Make sure you have ruby-1.8.7-p302 &amp; Rails 3 installed
+1. Make sure you have ruby-1.9.2 &amp; Rails 3.1 installed
 2. Install Bundler: `gem install bundler`
 3. Run: `bundle install`
 4. Start rails server: `rails s`
 5. In browser go to http://localhost:3000/ 
 6. On phone on wifi use http://your-ip-address:3000
 7. Play &amp; Enjoy!
+
+**NOTE:** Rails 3.1 uses sprockets. SASS is in /app/assets/stylesheets/ and Coffee-Script is in /app/assets/javascripts/
 
 ## MISC. URLS
 
