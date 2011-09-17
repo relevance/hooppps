@@ -9,3 +9,4 @@ group :assets do
   gem 'coffee-script', '2.2.0'
   gem 'uglifier'
 end
+
